@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/php/</link>
+    <description>Recent content in PHP on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 15 Sep 2015 16:57:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7にPHP5.6をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1022/</link>
+      <pubDate>Tue, 15 Sep 2015 16:57:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1022/</guid>
+      <description>CentOS7にyumでPHPをインストールしようとしたがバージョンが5.4と古かったのでremiで5.6をインストールする。 remiリポジ</description>
+    </item>
+    
+    <item>
+      <title>PHPを再インストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p930/</link>
+      <pubDate>Fri, 21 Mar 2014 13:17:39 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p930/</guid>
+      <description>PHPをインストールしたりアンインストールしたりしていると、ApacheとPHPの連携が外れてしまう場合がある。その場合はApache、PH</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でApache、PHP、MySQLの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p758/</link>
+      <pubDate>Sat, 16 Mar 2013 16:27:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p758/</guid>
+      <description>記事がバラバラになっているのでまとめておく。 Apacheの自動機動設定を行う 想定される環境だと既にApacheはインストール済み。 service httpd restart chkconfig httpd</description>
+    </item>
+    
+    <item>
+      <title>PEARに関する覚書き</title>
+      <link>https://tomonorimatsumura.github.io/blog/p413/</link>
+      <pubDate>Sun, 09 Dec 2012 09:00:28 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p413/</guid>
+      <description># PEARの設定を表示する pear config-show Configuration (channel pear.php.net): ===================================== Auto-discover new Channels auto_discover &amp;amp;lt;not set&amp;amp;gt; Default Channel default_channel pear.php.net HTTP Proxy Server Address http_proxy &amp;amp;lt;not set&amp;amp;gt; PEAR server [DEPRECATED] master_server pear.php.net Default Channel Mirror preferred_mirror pear.php.net Remote Configuration File remote_config &amp;amp;lt;not set&amp;amp;gt; PEAR executables directory bin_dir /usr/bin PEAR documentation directory doc_dir /usr/share/pear/doc PHP extension directory ext_dir /usr/lib64/php/modules PEAR directory php_dir</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのPHPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p395/</link>
+      <pubDate>Sat, 08 Dec 2012 17:22:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p395/</guid>
+      <description>Apacheをインストールする # apache用のSSLモジュールもインストールしておく yum -y install httpd httpd-devel mod_ssl PHPをインストールする 一応yumでそのま</description>
+    </item>
+    
+    <item>
+      <title>capybara-webkitについて</title>
+      <link>https://tomonorimatsumura.github.io/blog/p195/</link>
+      <pubDate>Wed, 28 Nov 2012 14:27:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p195/</guid>
+      <description>http://blog.uu59.org/2012-09-19-capybara-webkit-crawler.html PHPでウェブブラウザを作る http://chobie.hatenablog.com/entry/2012/03/18/220103</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にPECL::ssh2をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p183/</link>
+      <pubDate>Sun, 25 Nov 2012 14:10:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p183/</guid>
+      <description>PECL::ssh2をインストールする インストールにはPEARおよびlibssh2、libssh2-develが必要。適宜インストールしてお</description>
+    </item>
+    
+    <item>
+      <title>ＸＡＭＰＰ ver 1.7.3にPHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p220/</link>
+      <pubDate>Sun, 06 Nov 2011 06:28:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p220/</guid>
+      <description>http://sinsengumi.net/blog/2010/09/xampp-1-7-3%E3%81%ABphpunit-3-5%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</description>
+    </item>
+    
+    <item>
+      <title>Amebaのフィード取得で嵌った件</title>
+      <link>https://tomonorimatsumura.github.io/blog/p215/</link>
+      <pubDate>Sat, 19 Feb 2011 08:35:22 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p215/</guid>
+      <description>CURLライブラリのマルチ機能を試そうと思い、AKB48のメンバーブログのフィードの一気解析を実行。 // フィードURLの設定 $arFeedUrl = array( ‘http:</description>
+    </item>
+    
+  </channel>
+</rss>

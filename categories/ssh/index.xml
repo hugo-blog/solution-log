@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/ssh/</link>
+    <description>Recent content in SSH on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 17 Nov 2015 13:59:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7でSSHを秘密鍵公開鍵を使って設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1084/</link>
+      <pubDate>Tue, 17 Nov 2015 13:59:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1084/</guid>
+      <description>キーペアを作成する 接続元の端末でキーペアを作成する。作成した公開鍵を接続サーバの接続アカウントに置く。SSH接続時は .sshディレクトリ のア</description>
+    </item>
+    
+    <item>
+      <title>awkでSSHアクセス履歴を調べる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1080/</link>
+      <pubDate>Tue, 17 Nov 2015 13:18:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1080/</guid>
+      <description>SSHのアクセスログを定期的に調べる必要がある。 ログインが成功したアクセスを調べる # アクセスが成功したログインを全て表示する grep &amp;quot;Accepted&amp;quot; /var/log/secure* # もしくは</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でVNCをポートフォワーディングで接続する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p687/</link>
+      <pubDate>Thu, 14 Feb 2013 06:53:20 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p687/</guid>
+      <description>SSH接続ポート番号を指定する vncviwerコマンドではSSH接続ポート番号が指定出来ないみたいなので、「/etc/ssh/ssh_con</description>
+    </item>
+    
+    <item>
+      <title>公開鍵秘密鍵を設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p663/</link>
+      <pubDate>Sun, 03 Feb 2013 02:22:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p663/</guid>
+      <description>VNC環境で立ち上げたEclipseからEgitで外部gitリポジトリにアクセスする必要が出てきたのでOpenSSHの設定をもう一度見直す キ</description>
+    </item>
+    
+    <item>
+      <title>Windwos7で公開鍵秘密鍵を発行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p419/</link>
+      <pubDate>Sun, 09 Dec 2012 11:08:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p419/</guid>
+      <description>PuTTYでssh2プロトコルを使ってssh接続Putytyだとフォーマットの変換などが入り面倒なのでTera Termを使う。</description>
+    </item>
+    
+    <item>
+      <title>さくらのスタンダードでsftpを使う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p378/</link>
+      <pubDate>Fri, 07 Dec 2012 15:10:19 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p378/</guid>
+      <description>EclipseのRSE(Remote System Explore)を使おうと思い、さくらのスタンダードにEclipseから一向に接続できない。どうやら原</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にPECL::ssh2をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p183/</link>
+      <pubDate>Sun, 25 Nov 2012 14:10:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p183/</guid>
+      <description>PECL::ssh2をインストールする インストールにはPEARおよびlibssh2、libssh2-develが必要。適宜インストールしてお</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでSSHの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p5/</link>
+      <pubDate>Thu, 04 Oct 2012 08:51:41 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p5/</guid>
+      <description>秘密鍵および公開鍵の作成 ローカルのCentOSから ssh-keygen -t rsa これで、/root/.sshに、秘密鍵(id_rsa)と公開鍵(id_rsa.pub</description>
+    </item>
+    
+  </channel>
+</rss>

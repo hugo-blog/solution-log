@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windwos 7 on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/windwos-7/</link>
+    <description>Recent content in Windwos 7 on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 03 Oct 2015 12:43:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/windwos-7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7のディスクイメージを作成する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1027/</link>
+      <pubDate>Sat, 03 Oct 2015 12:43:59 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1027/</guid>
+      <description>CentOSのHPよりダウンロード、ImgBurnで作成。 参考サイト ImgBurnの簡単な使い方･設定の解説</description>
+    </item>
+    
+    <item>
+      <title>Windows7にVirtualBoxをインストールしCentOS7をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1003/</link>
+      <pubDate>Tue, 11 Aug 2015 03:47:53 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1003/</guid>
+      <description>ノートPCをlenovoからdynabookに替えたので新しく作業環境を整える必要が出てきた。CentOSも世の中の流れがだんだんと「6」か</description>
+    </item>
+    
+    <item>
+      <title>Windows7にGitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p990/</link>
+      <pubDate>Fri, 29 May 2015 13:38:28 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p990/</guid>
+      <description>壮年団の写真及び動画整理の関係で、コマンドプロンプトのプログラミングコードを書く必要が出てきた。Windows機からGitが直接使えた方が作</description>
+    </item>
+    
+    <item>
+      <title>Windows7にVMware Player &#43; CentOS6.3をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p535/</link>
+      <pubDate>Thu, 03 Jan 2013 09:01:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p535/</guid>
+      <description>WindowsでのSSHやgitの設定が非常に手間なのでノートPCにCentOSをそのまま突っ込もうと思いVMware Playerを試す。 C</description>
+    </item>
+    
+  </channel>
+</rss>

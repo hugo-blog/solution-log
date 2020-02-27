@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>シェルスクリプト on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/</link>
+    <description>Recent content in シェルスクリプト on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 26 Jan 2013 20:42:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>シェルスクリプトのテストを書く</title>
+      <link>https://tomonorimatsumura.github.io/blog/p638/</link>
+      <pubDate>Sat, 26 Jan 2013 20:42:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p638/</guid>
+      <description>どうもシェルスクリプトのテストを書いちゃった方が作業が速い気がして来たのでshunit2を調べてテストを書いてみる事にした。スクリプト言語だ</description>
+    </item>
+    
+  </channel>
+</rss>

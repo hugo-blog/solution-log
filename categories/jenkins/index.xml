@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/jenkins/</link>
+    <description>Recent content in Jenkins on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 26 Sep 2017 17:00:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jenkinsでジョブの設定を一気に書き換える</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1331/</link>
+      <pubDate>Tue, 26 Sep 2017 17:00:20 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1331/</guid>
+      <description>書き換え find /var/lib/jenkins/jobs -type f -name config.xml -print0 | xargs -0 sed -i &amp;quot;s/git clone-b jenkins-test/git clone -b topic/g&amp;quot; ドライラン(iオプションを無くす) find /var/lib/jenkins/jobs -type f -name config.xml -print0 | xargs -0 sed &amp;quot;s/git clone-b jenkins-test/git clone -b topic/g&amp;quot; 参考サイト 備忘録: [unix] スペース</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でJenkinsをバックアップ、リストアする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1320/</link>
+      <pubDate>Thu, 14 Sep 2017 13:29:22 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1320/</guid>
+      <description>Jenkinsバックアップデータを作成する # Jenkins稼働サーバで systemctl stop jenkins git clone https://github.com/sue445/jenkins-backup-script.git bash jenkins-backup.sh /path/to/jenkins archives.tar.gz Jenkinsをリストアする # Jenkinsを停止</description>
+    </item>
+    
+    <item>
+      <title>CentOS7へJenkinsをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1317/</link>
+      <pubDate>Thu, 14 Sep 2017 12:51:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1317/</guid>
+      <description>Jenkinsをインストールする # Javaをインストールする yum install java # yumリポジトリにjenkinsのリポジトリを追加する wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key # J</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにJenkins &#43; PHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p402/</link>
+      <pubDate>Sun, 09 Dec 2012 03:58:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p402/</guid>
+      <description>さくらのVPSにJenkins環境を整えるメモ。 Xdebugをインストールする PECLからインストールする pecl install xdebug PHPUnitをインストール</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にJenkinsをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p201/</link>
+      <pubDate>Fri, 30 Nov 2012 15:59:15 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p201/</guid>
+      <description>Javaをインストールする Javaがインストールされていない場合はインストールする。 rpm -qa java-1.7.0-openjdk yum -y install java-1.7.0-openjdk Jenkinsをインストールする 基本的には</description>
+    </item>
+    
+  </channel>
+</rss>

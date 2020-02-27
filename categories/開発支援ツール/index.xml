@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>開発支援ツール on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/%E9%96%8B%E7%99%BA%E6%94%AF%E6%8F%B4%E3%83%84%E3%83%BC%E3%83%AB/</link>
+    <description>Recent content in 開発支援ツール on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 06 Nov 2011 06:28:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/%E9%96%8B%E7%99%BA%E6%94%AF%E6%8F%B4%E3%83%84%E3%83%BC%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ＸＡＭＰＰ ver 1.7.3にPHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p220/</link>
+      <pubDate>Sun, 06 Nov 2011 06:28:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p220/</guid>
+      <description>http://sinsengumi.net/blog/2010/09/xampp-1-7-3%E3%81%ABphpunit-3-5%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</description>
+    </item>
+    
+  </channel>
+</rss>

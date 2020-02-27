@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chromium on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/chromium/</link>
+    <description>Recent content in Chromium on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 03 Sep 2013 06:16:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/chromium/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6にChromiumをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p854/</link>
+      <pubDate>Tue, 03 Sep 2013 06:16:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p854/</guid>
+      <description>CentOSでのChromeのサポートが切れてしまったのでChromiumに乗り換える 想定される環境 CentOS6.4 32bit CentOS6.3以前ではChrom</description>
+    </item>
+    
+  </channel>
+</rss>

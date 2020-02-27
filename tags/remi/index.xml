@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Remi on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/tags/remi/</link>
+    <description>Recent content in Remi on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 08 Dec 2012 17:22:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/tags/remi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6に最新バージョンのPHPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p395/</link>
+      <pubDate>Sat, 08 Dec 2012 17:22:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p395/</guid>
+      <description>Apacheをインストールする # apache用のSSLモジュールもインストールしておく yum -y install httpd httpd-devel mod_ssl PHPをインストールする 一応yumでそのま</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのMySQLとphpMyAdminをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p187/</link>
+      <pubDate>Sun, 25 Nov 2012 17:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p187/</guid>
+      <description>yumからのインストールだと、MySQL5.1系がインストールされ、どうやらこれがPHP5.4.9と親和性が取れないらしく、phpMyAdm</description>
+    </item>
+    
+  </channel>
+</rss>

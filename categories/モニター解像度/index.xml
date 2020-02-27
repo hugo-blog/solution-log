@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>モニター解像度 on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E8%A7%A3%E5%83%8F%E5%BA%A6/</link>
+    <description>Recent content in モニター解像度 on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 17 Aug 2014 16:00:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E8%A7%A3%E5%83%8F%E5%BA%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6.5でディスプレーの解像度を変更する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p954/</link>
+      <pubDate>Sun, 17 Aug 2014 16:00:23 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p954/</guid>
+      <description>ドライバの不具合なのか良く分からないが、たまにディスプレーの解像度が正しく設定出来なくなるので手動で変更する。 ディスプレーの状態を確認する #</description>
+    </item>
+    
+  </channel>
+</rss>

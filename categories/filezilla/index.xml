@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FileZilla on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/filezilla/</link>
+    <description>Recent content in FileZilla on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 08 Nov 2015 04:03:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/filezilla/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7へFilezillaをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1065/</link>
+      <pubDate>Sun, 08 Nov 2015 04:03:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1065/</guid>
+      <description>FileZillaをインストールする yum -y install epel-release yum -y install filezilla 参考サイト How to Install FileZilla on CentOS 7 – e Learning</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3でFileZillaを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p306/</link>
+      <pubDate>Tue, 04 Dec 2012 01:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p306/</guid>
+      <description>FileZillaをインストールする 最初はgFTPをRPMからインストールしようと思ったけど、依存関係でシステムがイカれるかもとか言う書き込</description>
+    </item>
+    
+  </channel>
+</rss>

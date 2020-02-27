@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtual Box on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/virtual-box/</link>
+    <description>Recent content in Virtual Box on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 06 Mar 2016 11:34:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/virtual-box/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7にVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1174/</link>
+      <pubDate>Sun, 06 Mar 2016 11:34:43 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1174/</guid>
+      <description>VirtualBoxをインストールする こちらのサイトを参考にした。 yum istall dkms cd /etc/yum.repos.d/ sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo yum update yum list | grep VirtualBox yum install VirtualBox-xxxx Vagrantをインストールする インス</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1168/</link>
+      <pubDate>Sun, 06 Mar 2016 11:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1168/</guid>
+      <description>Docker、Vagrant等仮想化技術が非常に大切だと感じるこの頃｡｡｡ 想定環境 さくらのVPS 2GB CentOS7 VirtualBoxをインストールする こ</description>
+    </item>
+    
+    <item>
+      <title>Windows7にVirtualBoxをインストールしCentOS7をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1003/</link>
+      <pubDate>Tue, 11 Aug 2015 03:47:53 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1003/</guid>
+      <description>ノートPCをlenovoからdynabookに替えたので新しく作業環境を整える必要が出てきた。CentOSも世の中の流れがだんだんと「6」か</description>
+    </item>
+    
+    <item>
+      <title>Virtual BoxにインストールしたCentOS6.4でネットワークを設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p907/</link>
+      <pubDate>Wed, 11 Dec 2013 03:23:04 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p907/</guid>
+      <description>Virtual Box上でCentOS環境を複数作成してテストスクリプトを試す必要が出てきた。その場合のネットワークを設定に関するまとめ。 Ethernet</description>
+    </item>
+    
+  </channel>
+</rss>

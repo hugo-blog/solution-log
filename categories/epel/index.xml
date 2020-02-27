@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EPEL on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/epel/</link>
+    <description>Recent content in EPEL on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 07 Nov 2015 13:14:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/epel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6でPDFにパスワードを掛ける</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1060/</link>
+      <pubDate>Sat, 07 Nov 2015 13:14:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1060/</guid>
+      <description>壮年団の文書作成、配布等で名簿を扱う関係でPDFにパスワードを掛けたい場面が出て来た。 pdftkをインストールする yum install pdftk パスワードを設定する</description>
+    </item>
+    
+    <item>
+      <title>EclipseにAptanaをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p739/</link>
+      <pubDate>Tue, 12 Mar 2013 15:22:52 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p739/</guid>
+      <description>Eclipseでプロジェクトを扱うときに静的HTMLで書かれたサイトは「Webプロジェクト」として扱いたいのでAptana Studioをイン</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にEPELリポジトリを追加する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p548/</link>
+      <pubDate>Sat, 05 Jan 2013 04:29:24 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p548/</guid>
+      <description>EPELリポジトリを追加する EPELの公式サイトのFAQにインストール方法があった。 # 32bit版64bit版共通 rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm EPELの設定を確認</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRemiリポジトリをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p542/</link>
+      <pubDate>Sat, 05 Jan 2013 04:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p542/</guid>
+      <description>どうやらCentOSでPHP+MySQLのアップデートを行うにはRemiリポジトリが相性が良いらしい。 Remiをインストールする まずEPEL</description>
+    </item>
+    
+  </channel>
+</rss>

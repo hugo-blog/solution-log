@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vagrant on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/vagrant/</link>
+    <description>Recent content in vagrant on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 06 Mar 2016 11:34:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7にVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1174/</link>
+      <pubDate>Sun, 06 Mar 2016 11:34:43 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1174/</guid>
+      <description>VirtualBoxをインストールする こちらのサイトを参考にした。 yum istall dkms cd /etc/yum.repos.d/ sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo yum update yum list | grep VirtualBox yum install VirtualBox-xxxx Vagrantをインストールする インス</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1168/</link>
+      <pubDate>Sun, 06 Mar 2016 11:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1168/</guid>
+      <description>Docker、Vagrant等仮想化技術が非常に大切だと感じるこの頃｡｡｡ 想定環境 さくらのVPS 2GB CentOS7 VirtualBoxをインストールする こ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p951/</link>
+      <pubDate>Wed, 02 Jul 2014 07:39:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p951/</guid>
+      <description>前からやってみたかったので、本腰入れてやってみる。 VirtualBoxをインストールする このサイトを参考にする。 http://qiita.com/Itomaki/items/9a6a314a853cdcd00f80 参考サイト CentOS 上で Vagrant を導入す</description>
+    </item>
+    
+  </channel>
+</rss>

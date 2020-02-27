@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/mysql/</link>
+    <description>Recent content in MySQL on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 16 Mar 2013 16:27:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6でApache、PHP、MySQLの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p758/</link>
+      <pubDate>Sat, 16 Mar 2013 16:27:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p758/</guid>
+      <description>記事がバラバラになっているのでまとめておく。 Apacheの自動機動設定を行う 想定される環境だと既にApacheはインストール済み。 service httpd restart chkconfig httpd</description>
+    </item>
+    
+    <item>
+      <title>WordPressをPC閲覧用とスマホ閲覧用に分ける</title>
+      <link>https://tomonorimatsumura.github.io/blog/p516/</link>
+      <pubDate>Wed, 02 Jan 2013 03:28:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p516/</guid>
+      <description>PC用のテンプレートからだとスマホからアクセスした時に表示が見にくいのでWordPressブログをもう一つ用意して同期する。 http://linuxserver.jp/%E3%82%B5%E3%83%BC%E3%83%90%E6%A7%8B%E7%AF%89/DB/MySQL/mysqldump%E3%81%A8cron%E3%81%A7%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97.php</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのMySQLとphpMyAdminをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p187/</link>
+      <pubDate>Sun, 25 Nov 2012 17:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p187/</guid>
+      <description>yumからのインストールだと、MySQL5.1系がインストールされ、どうやらこれがPHP5.4.9と親和性が取れないらしく、phpMyAdm</description>
+    </item>
+    
+  </channel>
+</rss>

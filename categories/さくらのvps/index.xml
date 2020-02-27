@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>さくらのVPS on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps/</link>
+    <description>Recent content in さくらのVPS on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 19 Mar 2017 09:11:45 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>さくらのVPSにFreeBSD 9.3をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1250/</link>
+      <pubDate>Sun, 19 Mar 2017 09:11:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1250/</guid>
+      <description>ISOイメージをVPSへアップロードする クライアントマシーン（CentOS7）にlsftpをインストールする。 yum install lftp FreeBSDのアーカイ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1168/</link>
+      <pubDate>Sun, 06 Mar 2016 11:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1168/</guid>
+      <description>Docker、Vagrant等仮想化技術が非常に大切だと感じるこの頃｡｡｡ 想定環境 さくらのVPS 2GB CentOS7 VirtualBoxをインストールする こ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにCentOS6.4 i386をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p861/</link>
+      <pubDate>Sun, 15 Sep 2013 16:03:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p861/</guid>
+      <description>VMWare Playerの実験をしようと思い、色々とやってみた。 CentOSのisoファイルをさくらのVPSへアップロードする sftpでイメージをアッ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSのCentOSにVMWare Player &#43; Windows XPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p787/</link>
+      <pubDate>Mon, 25 Mar 2013 01:42:01 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p787/</guid>
+      <description>VMWare Playerをインストールする https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0 さくらのVPSからVMWare Playerを使うにはバイバスを通す必要がある http://communities.vmware.com/docs/DOC-8970 vmx.allowNested = TRUE ローカルのCentOS</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでVNCを起動する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p646/</link>
+      <pubDate>Sat, 02 Feb 2013 04:26:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p646/</guid>
+      <description>リモート開発をするのに、VNC経由の方が簡単なんじゃないかと思い、VNC環境を入れてみた。一応このサイトの手順通りで大体は環境構築が可能だと</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSで回線速度が遅くアクセスに時間がかかる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p622/</link>
+      <pubDate>Fri, 25 Jan 2013 13:50:04 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p622/</guid>
+      <description>さくらの公式サイトによると、どうやら初期設定で変更をかける必要があるらしい。 ethtoolコマンドでtcp segmentation offloadをoffにする ethtool -K</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにJenkins &#43; PHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p402/</link>
+      <pubDate>Sun, 09 Dec 2012 03:58:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p402/</guid>
+      <description>さくらのVPSにJenkins環境を整えるメモ。 Xdebugをインストールする PECLからインストールする pecl install xdebug PHPUnitをインストール</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでSSHの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p5/</link>
+      <pubDate>Thu, 04 Oct 2012 08:51:41 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p5/</guid>
+      <description>秘密鍵および公開鍵の作成 ローカルのCentOSから ssh-keygen -t rsa これで、/root/.sshに、秘密鍵(id_rsa)と公開鍵(id_rsa.pub</description>
+    </item>
+    
+  </channel>
+</rss>

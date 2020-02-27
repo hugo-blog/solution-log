@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>owncloud on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/owncloud/</link>
+    <description>Recent content in owncloud on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 12 Jan 2016 06:48:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/owncloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7へownCloudをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1122/</link>
+      <pubDate>Tue, 12 Jan 2016 06:48:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1122/</guid>
+      <description>リポジトリを追加する RPMForge、EPEL、Remiをリポジトリへ追加する # RPMForge rpm -ivh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt # EPEL rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7 # remi rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm rpm --import http://rpms.famillecollet.com/RPM-GPG-KEY-remi PHPをインス</description>
+    </item>
+    
+  </channel>
+</rss>

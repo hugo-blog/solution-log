@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ソリューリョンログ</title>
+        <meta name="author">
+        <meta name="description" content="The awesome blog of John Doe.">
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://tomonorimatsumura.github.io/blog/css/styles.css">
+        <link rel="icon" href="https://tomonorimatsumura.github.io/blog/favicon.ico">
+        <link rel="apple-touch-icon" href="https://tomonorimatsumura.github.io/blog/apple-touch-icon.png" />
+        <link rel="stylesheet" href="https://tomonorimatsumura.github.io/blog/css/highlightjs/monokai.css">
+        <script src="https://tomonorimatsumura.github.io/blog/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+        <style>
+        .site-header h2 .logo {
+        background: url(https://tomonorimatsumura.github.io/blog/img/desk.jpg) no-repeat 0 0;
+        }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .site-header h2 .logo {
+            background-image: url(https://tomonorimatsumura.github.io/blog/img/desk.jpg);
+        }}
+       .site-header {
+         background: #2a373d url(https://tomonorimatsumura.github.io/blog/img/desk.jpg) no-repeat center center;
+         z-index: -1;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <header class="site-header">
+          <div class="transparent-layer">
+              <h2>ソリューションログ</h2>
+          </div>
+        </header>
+
+
+<div class="container clearfix">
+    <main role="main" class="content">
+        <article class="post">
+            <a class="btn home" href="https://tomonorimatsumura.github.io/blog/" title="Back to home">&laquo; Back to home</a>
+            
+<h1><a href="https://tomonorimatsumura.github.io/blog/p459/" title="CentOS6.3でApache上でRedmineを実行する">CentOS6.3でApache上でRedmineを実行する</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2012.12.31">2012.12.31</time>
+
+    &middot; Tagged in
+        
+        <a href="https://tomonorimatsumura.github.io/blog/tags/apache">apache</a>, 
+        
+        <a href="https://tomonorimatsumura.github.io/blog/tags/centos">centos</a>, 
+        
+        <a href="https://tomonorimatsumura.github.io/blog/tags/ruby">ruby</a>
+        
+    
+
+</span>
+</footer>
+
+            <p><a href="http://blog.redmine.jp/articles/redmine-2_1-installation_centos/">こちらのサイト</a>を参考にした。</p>
+<h3 id="passengerのインストール">Passengerのインストール</h3>
+<p><a href="http://www.modrails.com/">Phusion Passenger</a>をインストールする</p>
+<pre><code class="language-:bash" data-lang=":bash">gem install passenger --no-rdoc --no-ri
+</code></pre><h3 id="passengerのapache用モジュールのインストールと設定">PassengerのApache用モジュールのインストールと設定</h3>
+<pre><code class="language-:bash" data-lang=":bash">service httpd start # Apacheを機動させておく
+passenger-install-apache2-module
+</code></pre><p>『<strong>/etc/httpd/conf.d/passenger.conf</strong>』を作成し「<strong>passenger-install-apache2-module –snippet</strong>」で表示される設定を書き込む。</p>
+<pre><code class="language-:bash" data-lang=":bash"># Passengerの基本設定。
+# passenger-install-apache2-module --snippet を実行して表示される設定を使用。
+# 環境によって設定値が異なりますので以下の3行はそのまま転記しないでください。
+#
+LoadModule passenger_module /usr/local/lib/ruby/gems/1.9.1/gems/passenger-3.0.17/ext/apache2/mod_passenger.so
+PassengerRoot /usr/local/lib/ruby/gems/1.9.1/gems/passenger-3.0.17
+PassengerRuby /usr/local/bin/ruby
+</code></pre><h3 id="apacheの起動および自動起動の設定">Apacheの起動および自動起動の設定</h3>
+<pre><code class="language-:bash" data-lang=":bash">/etc/init.d/httpd start
+chkconfig httpd on
+</code></pre><h3 id="apache上のpassengerでredmineを実行するための設定">Apache上のPassengerでRedmineを実行するための設定</h3>
+<p>サブディレクトリでRedmineを実行する設定をする。シンボリックリンクを作成し、URLのディレクトリ名部分で使いたい名前を設定する。</p>
+<pre><code class="language-:bash" data-lang=":bash">ln -s /var/lib/redmine/public /var/www/html/redmine
+</code></pre><p>『<strong>/etc/httpd/conf.d/passenger.conf</strong>』に以下の設定を追加。</p>
+<pre><code class="language-:bash" data-lang=":bash">RackBaseURI /redmine
+</code></pre><p>また<a href="./?p=605">Redmineインストールディレクトリの権限の設定</a>も行う事。</p>
+<pre><code class="language-:bash" data-lang=":bash">chown -R apache:apache /var/lib/redmine
+</code></pre><p>設定後、Apacheを再起動。</p>
+<pre><code class="language-:bash" data-lang=":bash">/etc/init.d/httpd configtest
+/etc/init.d/httpd graceful
+</code></pre><h3 id="参考サイト">参考サイト</h3>
+<ul>
+<li><a href="http://blog.redmine.jp/articles/redmine-2_1-installation_centos/">Redmine 2.1をCentOS 6.3にインストールする手順 | Redmine.JP Blog</a> <!-- raw HTML omitted --></li>
+</ul>
+
+            <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp459%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=CentOS6.3%e3%81%a7Apache%e4%b8%8a%e3%81%a7Redmine%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b&amp;url=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp459%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp459%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp459%2f&title=CentOS6.3%e3%81%a7Apache%e4%b8%8a%e3%81%a7Redmine%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+        </article>
+        
+        <div class="comments">
+            <h3>Comments</h3>
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "spf13" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+    </main>
+    <aside class="author">
+  <img class="profile-image" src="https://tomonorimatsumura.github.io/blog/img/profile.png" width="70" height="70" alt="Matsumura Tomonori" />
+  <p class="name">by 
+  <strong>Matsumura Tomonori</strong></p>
+  <p class="address">Earth</p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/ma2muratomonori" class="icon-twitter" target="_blank" title="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/TomonoriMatsumura" class="icon-github" target="_blank" title="Github"></a></li>
+
+
+
+
+<li><a href="https://tomonorimatsumura.github.io/blog/post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+</div>
+
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://tomonorimatsumura.github.io/blog/post/index.xml" title="RSS"></a>
+        <p>&copy; 2020 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/tomonorimatsumura.github.io\/blog\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://tomonorimatsumura.github.io/blog/js/plugins.js"></script>
+
+
+
+
+</body>
+</html>
+

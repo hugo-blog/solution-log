@@ -1,0 +1,303 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ソリューリョンログ</title>
+        <meta name="author">
+        <meta name="description" content="The awesome blog of John Doe.">
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://tomonorimatsumura.github.io/blog/css/styles.css">
+        <link rel="icon" href="https://tomonorimatsumura.github.io/blog/favicon.ico">
+        <link rel="apple-touch-icon" href="https://tomonorimatsumura.github.io/blog/apple-touch-icon.png" />
+        <link rel="stylesheet" href="https://tomonorimatsumura.github.io/blog/css/highlightjs/monokai.css">
+        <script src="https://tomonorimatsumura.github.io/blog/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+        <style>
+        .site-header h2 .logo {
+        background: url(https://tomonorimatsumura.github.io/blog/img/desk.jpg) no-repeat 0 0;
+        }
+        @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+          .site-header h2 .logo {
+            background-image: url(https://tomonorimatsumura.github.io/blog/img/desk.jpg);
+        }}
+       .site-header {
+         background: #2a373d url(https://tomonorimatsumura.github.io/blog/img/desk.jpg) no-repeat center center;
+         z-index: -1;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <header class="site-header">
+          <div class="transparent-layer">
+              <h2>ソリューションログ</h2>
+          </div>
+        </header>
+
+
+<div class="container clearfix">
+    <main role="main" class="content">
+        <article class="post">
+            <a class="btn home" href="https://tomonorimatsumura.github.io/blog/" title="Back to home">&laquo; Back to home</a>
+            
+<h1><a href="https://tomonorimatsumura.github.io/blog/p1134/" title="CentOS7へRuby2.3とRails4をインストールする">CentOS7へRuby2.3とRails4をインストールする</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016.01.18">2016.01.18</time>
+
+</span>
+</footer>
+
+            <p>Railsでウェブサイトを作る必要が出てきそうなのでRailsをさくらのVPS2GBへインストールしサイト構築の練習をする。</p>
+<h3 id="rubyをインストールする">Rubyをインストールする</h3>
+<p>CentOS7標準のRubyのバージョンが古いので、2.3系をRPMパッケージでインストールする。Rubyがどのようにインストールされるかは<a href="https://github.com/feedforce/ruby-rpm/blob/master/ruby.spec">specファイル</a>を確認する。Rubyのビルドに必要なパッケージも確認出来る。</p>
+<blockquote>
+<p>Requires: readline ncurses gdbm glibc openssl libyaml libffi zlib</p>
+</blockquote>
+<blockquote>
+<p>BuildRequires: readline-devel ncurses-devel gdbm-devel glibc-devel gcc openssl-devel make libyaml-devel libffi-devel zlib-devel</p>
+</blockquote>
+<pre><code class="language-:bash" data-lang=":bash"># EPELをインストールする
+rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7
+
+# 必要なパッケージをインストールする
+yum --enablerepo=epel -y install gdbm-devel libdb4-devel libffi-devel libyaml libyaml-devel ncurses-devel openssl-devel readline-devel tcl-devel
+
+
+# Rubyをインストールする
+#RPMを作成する
+mkdir -p /root/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
+
+cd /root/rpmbuild/SOURCES
+curl -O http://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.0.tar.gz
+
+cd /root/rpmbuild/SPECS
+curl -O https://raw.githubusercontent.com/feedforce/ruby-rpm/master/ruby.spec
+
+rpmbuild -bb /root/rpmbuild/SPECS/ruby.spec
+
+
+# Rubyをインストールする
+rpm -Uvh /root/rpmbuild/RPMS/ruby-2.3.0-1.el7.centos.x86_64.rpm 
+
+
+ruby -v
+# rpm -Uvh ruby-2.3.0-1.el7.centos.x86_64.rpm 
+
+gem -v
+2.5.1
+</code></pre><h3 id="rails4をインストールする">Rails4をインストールする</h3>
+<pre><code class="language-:bash" data-lang=":bash">yum --enablerepo=epel -y install nodejs /
+mariadb-devel
+
+gem install bundler 
+gem install rails --no-ri --no-rdoc
+gem install mysql2 --no-ri --no-rdoc -- --with-mysql-config=/usr/bin/mysql_config 
+
+rails -v
+Rails 4.2.5
+</code></pre><h3 id="railsの動作確認を行う">Railsの動作確認を行う</h3>
+<pre><code class="language-:bash" data-lang=":bash">cd /var/www/html
+rails new demo
+
+# Passengerで起動させる時は
+chown -R apache:apache demo
+
+
+# サーバのIPアドレスを調べる
+ip addr show eth0 | grep inet | awk &quot;{ print $2; }&quot; | sed &quot;s/\/.*$//&quot;
+rails server --binding=IPアドレス
+</code></pre><h3 id="passengerをインストールする">Passengerをインストールする</h3>
+<p>WEBrick経由だと若干反応が遅いのでPassengerをインストールする。「<strong>SELinux</strong>」は「<strong>enforced</strong>」の設定にしておく。またPassengerは<a href="https://blog.phusion.nl/2015/03/31/passenger-5-0-6/">脆弱性の関係</a>で5.0.6以上にする。</p>
+<pre><code class="language-:bash" data-lang=":bash"># Passengerをインストールするのに必要なパッケージをインストールする
+yum install libcurl-devel /
+httpd-devel /
+apr-devel /
+apr-util-devel
+
+# Passengerをインストールする
+gem install passenger --version 5.0.6
+passenger-install-apache2-module
+</code></pre><h3 id="apacheの設定ファイルを編集する">Apacheの設定ファイルを編集する</h3>
+<pre><code class="language-:bash" data-lang=":bash">vi /etc/httpd/conf.d/rails.conf
+
+# Railsの画像ファイル・CSSファイル等へのアクセスを許可する設定。
+# Apache 2.4のデフォルトではサーバ上の全ファイルへのアクセスが禁止されている。
+&amp;lt;Directory &quot;/var/www/html/demo&quot;&amp;gt;
+  Require all granted
+&amp;lt;/Directory&amp;gt;
+
+# Passengerの基本設定。
+# passenger-install-apache2-module --snippet で表示された設定を記述。
+# 環境によって設定値が異なるため以下の3行はそのまま転記せず、必ず
+# passenger-install-apache2-module --snippet で表示されたものを使用すること。
+#
+LoadModule passenger_module /usr/lib64/ruby/gems/2.3.0/gems/passenger-5.0.6/buildout/apache2/mod_passenger.so
+   &amp;lt;IfModule mod_passenger.c&amp;gt;
+     PassengerRoot /usr/lib64/ruby/gems/2.3.0/gems/passenger-5.0.6
+     PassengerDefaultRuby /usr/bin/ruby
+   &amp;lt;/IfModule&amp;gt;
+
+# Passengerが追加するHTTPヘッダを削除するための設定（任意）。
+#
+Header always unset &quot;X-Powered-By&quot;
+Header always unset &quot;X-Runtime&quot;
+
+# 必要に応じてPassengerのチューニングのための設定を追加（任意）。
+# 詳しくはPhusion Passenger users guide(https://www.phusionpassenger.com/library/config/apache/reference/)参照。
+PassengerMaxPoolSize 20
+PassengerMaxInstancesPerApp 4
+PassengerPoolIdleTime 864000
+PassengerHighPerformance on
+PassengerStatThrottleRate 10
+PassengerSpawnMethod smart
+PassengerFriendlyErrorPages off
+
+RackBaseURI /rails
+
+# RailsをDevelopment modeで運用する
+RailsEnv development
+</code></pre><h3 id="selinuxを設定する">SELinuxを設定する</h3>
+<pre><code class="language-:bash" data-lang=":bash">grep PassengerAgent /var/log/audit/audit.log | audit2allow -M passengeragent
+semodule -i passengeragent.pp
+
+grep httpd /var/log/audit/audit.log |audit2allow -M passenger
+semodule -i passenger.pp
+
+chcon -R -h -t httpd_sys_content_t `passenger-config --root`
+
+# httpdモジュール(soファイル)とpassenger.soでターゲットポリシーを同一にする
+ls -lZ /usr/lib64/httpd/modules/
+
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 libphp5-zts.so
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 libphp5.so
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 mod_access_compat.so
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 mod_actions.so
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 mod_alias.so
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 mod_allowmethods.so
+-rwxr-xr-x. root root system_u:object_r:httpd_modules_t:s0 mod_asis.so
+.
+.
+.
+.
+.
+cd /usr/lib64/ruby/gems/2.3.0/gems/passenger-5.0.23/buildout/apache2/
+chcon system_u:object_r:httpd_modules_t:s0 mod_passenger.so 
+
+# Railsのインストールディレクトリの権限を設定する
+chcon -R -h -t httpd_sys_content_t rails_dir
+
+systemctl restart httpd.service
+</code></pre><h3 id="railsに秘密鍵公開鍵を設定する">Railsに秘密鍵公開鍵を設定する</h3>
+<p>モード別に「/rails_dir/config/secrets.yml」に適宜「secret_key_base」を設定する。</p>
+<h3 id="参考サイト">参考サイト</h3>
+<ul>
+<li><a href="http://www.server-world.info/query?os=CentOS_7%EF%BF%BDp=rails4">CentOS 7 : Ruby on Rails 4 ： Server World</a></li>
+<li><a href="http://www.server-world.info/query?os=CentOS_7%EF%BF%BDp=ruby22">CentOS 7 : Ruby 2.2 インストール ： Server World</a></li>
+<li><a href="http://www.kakiro-web.com/linux/rpmbuild.html">CentOS7.1 64bit rpmbuildコマンドによるRPMの作成 | kakiro-web カキローウェブ</a></li>
+<li><a href="http://qiita.com/koitatu3/items/49635de6ec40a5f30222">Linux – SRPMを一撃でRPMビルドする。 (rpmコマンドでつい忘れがちな細かいオプションもおまけで記載) – Qiita</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-centos-7">How To Install Ruby on Rails with rbenv on CentOS 7 | DigitalOcean</a></li>
+<li><a href="http://rails3try.blogspot.jp/2011/12/passenger-development.html">Rails3 事始め: Passenger で development モードで動かす</a></li>
+<li><a href="http://seeku.hateblo.jp/entry/2013/05/31/093124">SELinuxが有効な状態でRedmineを動かす – 開発メモ</a></li>
+</ul>
+
+            <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp1134%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=CentOS7%e3%81%b8Ruby2.3%e3%81%a8Rails4%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%99%e3%82%8b&amp;url=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp1134%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-gplus" href="https://plus.google.com/share?url=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp1134%2f" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google&#43;"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2ftomonorimatsumura.github.io%2fblog%2fp1134%2f&title=CentOS7%e3%81%b8Ruby2.3%e3%81%a8Rails4%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%99%e3%82%8b" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+        </article>
+        
+        <div class="comments">
+            <h3>Comments</h3>
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "spf13" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+        
+    </main>
+    <aside class="author">
+  <img class="profile-image" src="https://tomonorimatsumura.github.io/blog/img/profile.png" width="70" height="70" alt="Matsumura Tomonori" />
+  <p class="name">by 
+  <strong>Matsumura Tomonori</strong></p>
+  <p class="address">Earth</p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/ma2muratomonori" class="icon-twitter" target="_blank" title="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/TomonoriMatsumura" class="icon-github" target="_blank" title="Github"></a></li>
+
+
+
+
+<li><a href="https://tomonorimatsumura.github.io/blog/post/index.xml" class="icon-rss" target="_blank" title="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+</div>
+
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://tomonorimatsumura.github.io/blog/post/index.xml" title="RSS"></a>
+        <p>&copy; 2020 &middot; Powered by <a href="http://gohugo.io">Hugo</a>.</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/tomonorimatsumura.github.io\/blog\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://tomonorimatsumura.github.io/blog/js/plugins.js"></script>
+
+
+
+
+</body>
+</html>
+

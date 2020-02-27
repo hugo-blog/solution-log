@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/posts/</link>
+    <description>Recent content in Posts on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 26 Sep 2017 17:00:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jenkinsでジョブの設定を一気に書き換える</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1331/</link>
+      <pubDate>Tue, 26 Sep 2017 17:00:20 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1331/</guid>
+      <description>書き換え find /var/lib/jenkins/jobs -type f -name config.xml -print0 | xargs -0 sed -i &amp;quot;s/git clone-b jenkins-test/git clone -b topic/g&amp;quot; ドライラン(iオプションを無くす) find /var/lib/jenkins/jobs -type f -name config.xml -print0 | xargs -0 sed &amp;quot;s/git clone-b jenkins-test/git clone -b topic/g&amp;quot; 参考サイト 備忘録: [unix] スペース</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でJenkinsをバックアップ、リストアする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1320/</link>
+      <pubDate>Thu, 14 Sep 2017 13:29:22 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1320/</guid>
+      <description>Jenkinsバックアップデータを作成する # Jenkins稼働サーバで systemctl stop jenkins git clone https://github.com/sue445/jenkins-backup-script.git bash jenkins-backup.sh /path/to/jenkins archives.tar.gz Jenkinsをリストアする # Jenkinsを停止</description>
+    </item>
+    
+    <item>
+      <title>CentOS7へJenkinsをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1317/</link>
+      <pubDate>Thu, 14 Sep 2017 12:51:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1317/</guid>
+      <description>Jenkinsをインストールする # Javaをインストールする yum install java # yumリポジトリにjenkinsのリポジトリを追加する wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key # J</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でRedmineをバックアップ、リストアする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1312/</link>
+      <pubDate>Thu, 14 Sep 2017 12:30:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1312/</guid>
+      <description>Redmineをバックアップをする # 作業用ディレクトリへcdする cd /tmp # Gitリポジトリをアーカイブする tar cfv git.tar /var/git/ # Redmineメディアファイ</description>
+    </item>
+    
+    <item>
+      <title>HP Compaq 8100 Elite Small に nVIDIA GeForce GT520 1GB LowProfile を装着し CentOS7をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1309/</link>
+      <pubDate>Mon, 03 Jul 2017 15:09:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1309/</guid>
+      <description>CentOS7を設定する # フォントを大きくする setfont sun12x22 # インターネットへ接続する nmtui # GNOME デスクトップをインストールする yum groupinstall &amp;quot;GNOME Desktop&amp;quot; # nVIDIAグラフ</description>
+    </item>
+    
+    <item>
+      <title>Ansibleで環境変数を取得する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1295/</link>
+      <pubDate>Thu, 04 May 2017 08:09:27 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1295/</guid>
+      <description>Ansibleでデバグを行う際に環境変数を調べる必要が出てきた。 環境変数を取得する コマンド ansible -m setup hostname # VPSに最初に接続する例 # インベントリー</description>
+    </item>
+    
+    <item>
+      <title>Historyコマンドからコマンド利用頻度を調べる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1293/</link>
+      <pubDate>Sat, 22 Apr 2017 14:43:51 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1293/</guid>
+      <description>history | awk &amp;quot;{print $2}&amp;quot; | sort | uniq -c | sort -n -r -k1</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにFreeBSD 9.3をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1250/</link>
+      <pubDate>Sun, 19 Mar 2017 09:11:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1250/</guid>
+      <description>ISOイメージをVPSへアップロードする クライアントマシーン（CentOS7）にlsftpをインストールする。 yum install lftp FreeBSDのアーカイ</description>
+    </item>
+    
+    <item>
+      <title>Lenovo G580にCentOS7をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1239/</link>
+      <pubDate>Sun, 05 Mar 2017 16:20:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1239/</guid>
+      <description>Bootメディアを作成する SDカードを利用する。CentOSのサイトより Everything ISO イメージをダウンロードしSDカードへコピーする。SDカードはNT</description>
+    </item>
+    
+    <item>
+      <title>Gitリポジトリをcloneしてpushするまでの流れ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1231/</link>
+      <pubDate>Fri, 24 Feb 2017 13:48:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1231/</guid>
+      <description>クライアント側の設定をする クライアント側では最低限「user.name」および「user.email」を設定しておく。 # 現在の設定を確認する</description>
+    </item>
+    
+    <item>
+      <title>sedで文字列を置換する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1227/</link>
+      <pubDate>Tue, 14 Feb 2017 11:14:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1227/</guid>
+      <description>基本コマンド sed &amp;quot;s/pattern/replacement&amp;quot; オプション コマンド例 #カレントディレクトリのファイルに対して置換を実行しファイルを上書きする find . -type f | xargs sed -i &amp;quot;s/pattern/replacement/g&amp;quot; #カレントディ</description>
+    </item>
+    
+    <item>
+      <title>Seleniumでコマンドラインでページソースを取得する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1223/</link>
+      <pubDate>Tue, 14 Feb 2017 10:48:26 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1223/</guid>
+      <description>Selenium、Pythonの設定方法は『CentOS7にSeleniuimをインストールする』を参考にする。 スクリプトの書き方 import sys import os import</description>
+    </item>
+    
+    <item>
+      <title>Seleniumでコマンドラインでページタイトルを取得する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1216/</link>
+      <pubDate>Tue, 14 Feb 2017 10:11:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1216/</guid>
+      <description>Selenium、Pythonの設定方法は『CentOS7にSeleniuimをインストールする』を参考にする スクリプトの書き方 import sys from selenium import webdriver</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でSeleniumをDockerコンテナで利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1206/</link>
+      <pubDate>Sat, 28 Jan 2017 13:33:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1206/</guid>
+      <description>DockerをインストールしFirefoxコンテナを立ち上げる yum install docker systemctl start docker sytemctl enable docker docker run -d -p 4444:4444 selenium/standalone-firefox:latest Python Seleniumをインストールする yum install epel-release yum install python-pip</description>
+    </item>
+    
+    <item>
+      <title>CentOS7にSeleniuimをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1201/</link>
+      <pubDate>Sun, 18 Dec 2016 14:52:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1201/</guid>
+      <description>Pipをインストールする yum install epel-release yum install python-pip pip install --upgrade pip Xvfbをインストールする ブラウザを立ち上げずにSeleniumを操作するのに必要なライブラリを</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でUSBHDD（NTFS）をマウントする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1197/</link>
+      <pubDate>Mon, 22 Aug 2016 09:43:47 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1197/</guid>
+      <description>想定環境 さくらのVPS 2GB CentOS7 dmesg fdisk -l yum install epel-release yum -y –enablerepo=epel install dkms fuse-ntfs-3g mkidr /mnt/d mount /dev/sdc1 /mnt/d 参考サイト CentOS7でUSBディスク（NTFS</description>
+    </item>
+    
+    <item>
+      <title>CentOS7にVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1174/</link>
+      <pubDate>Sun, 06 Mar 2016 11:34:43 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1174/</guid>
+      <description>VirtualBoxをインストールする こちらのサイトを参考にした。 yum istall dkms cd /etc/yum.repos.d/ sudo wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo yum update yum list | grep VirtualBox yum install VirtualBox-xxxx Vagrantをインストールする インス</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1168/</link>
+      <pubDate>Sun, 06 Mar 2016 11:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1168/</guid>
+      <description>Docker、Vagrant等仮想化技術が非常に大切だと感じるこの頃｡｡｡ 想定環境 さくらのVPS 2GB CentOS7 VirtualBoxをインストールする こ</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でDockerを使いRedmineを立ち上げる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1165/</link>
+      <pubDate>Tue, 02 Feb 2016 17:25:23 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1165/</guid>
+      <description>Docker Imageを取得する</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でAnsibleを利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1156/</link>
+      <pubDate>Wed, 27 Jan 2016 08:15:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1156/</guid>
+      <description>Ansibleを管理ホストへインストールする Ansibleのインストールには管理ホスト側にPython2.6以上、対象ホスト側には2.4以上</description>
+    </item>
+    
+    <item>
+      <title>CentOS7へRuby2.3とRails4をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1134/</link>
+      <pubDate>Mon, 18 Jan 2016 14:22:30 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1134/</guid>
+      <description>Railsでウェブサイトを作る必要が出てきそうなのでRailsをさくらのVPS2GBへインストールしサイト構築の練習をする。 Rubyをインス</description>
+    </item>
+    
+    <item>
+      <title>CentOS7へownCloudをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1122/</link>
+      <pubDate>Tue, 12 Jan 2016 06:48:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1122/</guid>
+      <description>リポジトリを追加する RPMForge、EPEL、Remiをリポジトリへ追加する # RPMForge rpm -ivh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm rpm --import http://dag.wieers.com/rpm/packages/RPM-GPG-KEY.dag.txt # EPEL rpm -ivh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm rpm --import http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7 # remi rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm rpm --import http://rpms.famillecollet.com/RPM-GPG-KEY-remi PHPをインス</description>
+    </item>
+    
+    <item>
+      <title>CentOS7へNVIDIAグラフィックスドライバをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1117/</link>
+      <pubDate>Sat, 02 Jan 2016 11:47:00 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1117/</guid>
+      <description>CentOS7をアップデートするとグラフィックスドライバをカーネルに対して再構築しないといけないので手順をまとめておく NVIDIAグラフィッ</description>
+    </item>
+    
+    <item>
+      <title>CentOS7で動画を閲覧する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1113/</link>
+      <pubDate>Sat, 02 Jan 2016 10:08:19 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1113/</guid>
+      <description>VLC media playerのインストール準備 yum install epel-release yum localinstall --nogpgcheck http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm yum clean all yum update VLC media playerをインストールする yum install vlc 参考サイト Install VLC Media Player on CentOS 7 / RHEL 7 / Fedora 20</description>
+    </item>
+    
+    <item>
+      <title>Dockerでコンテナの名前を調べる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1106/</link>
+      <pubDate>Sat, 19 Dec 2015 19:05:22 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1106/</guid>
+      <description>Dockerにコンテナ名だけ表示するコマンドがないのでawkを使う docker ps | awk &amp;quot;NR == 2 {print $NF}&amp;quot; # NR == 2は2行目、$NFは最後の列</description>
+    </item>
+    
+    <item>
+      <title>Gitリポジトリを移設する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1101/</link>
+      <pubDate>Wed, 16 Dec 2015 10:00:23 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1101/</guid>
+      <description>移設側でリポジトリのリストを作成する ls /var/git -l | grep ^d | awk &amp;quot;{print $9}&amp;quot; &amp;amp;gt; git.list.txt 移設先で共有ベアリポジトリを作成する # 「git.list.txt」を取得しておく</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でWindows Zipアーカイブを解凍する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1096/</link>
+      <pubDate>Tue, 01 Dec 2015 16:15:05 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1096/</guid>
+      <description>Windowsで作成したzipアーカイブは通常のCentOS7だと解凍出来ないのでPerlを使う Archive::Zipをインストールする C</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でmod_encodingを利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1093/</link>
+      <pubDate>Tue, 01 Dec 2015 14:37:59 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1093/</guid>
+      <description>想定される環境 OS: CentOS7 Apache: 2.4系 mod_encodingをインストールする # httpd-develインストール yum -y install httpd-devel # mod_encoding</description>
+    </item>
+    
+    <item>
+      <title>Linuxでtarで解凍圧縮する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1088/</link>
+      <pubDate>Tue, 17 Nov 2015 16:14:59 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1088/</guid>
+      <description>圧縮する # tar (指定したファイル郡を一つのアーカイブファイルにまとめる) tar cfv files.tar files/ # tar + gzip tar cfvz files.tar.gz files/ 解凍する # tar (tarアーカイブを展開) tar xfv files.tar #</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でSSHを秘密鍵公開鍵を使って設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1084/</link>
+      <pubDate>Tue, 17 Nov 2015 13:59:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1084/</guid>
+      <description>キーペアを作成する 接続元の端末でキーペアを作成する。作成した公開鍵を接続サーバの接続アカウントに置く。SSH接続時は .sshディレクトリ のア</description>
+    </item>
+    
+    <item>
+      <title>awkでSSHアクセス履歴を調べる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1080/</link>
+      <pubDate>Tue, 17 Nov 2015 13:18:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1080/</guid>
+      <description>SSHのアクセスログを定期的に調べる必要がある。 ログインが成功したアクセスを調べる # アクセスが成功したログインを全て表示する grep &amp;quot;Accepted&amp;quot; /var/log/secure* # もしくは</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でmod_userdirを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1075/</link>
+      <pubDate>Mon, 16 Nov 2015 15:38:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1075/</guid>
+      <description>mod_userdirの設定をする vi /etc/httpd/conf.d/userdir.conf # # UserDir: The name of the directory that is appended onto a user&amp;quot;s home # directory if a ~user request is received. # # The path to the end user account &amp;quot;public_html&amp;quot; directory must be # accessible to the webserver userid. This usually means that ~userid # must have permissions</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でrarコマンドを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1072/</link>
+      <pubDate>Tue, 10 Nov 2015 15:13:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1072/</guid>
+      <description>現在のところ使えないのでCentOS6で対応する</description>
+    </item>
+    
+    <item>
+      <title>CentOS7にFTPサーバを構築する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1067/</link>
+      <pubDate>Sun, 08 Nov 2015 10:41:11 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1067/</guid>
+      <description>vsftpdを導入する # vsftpdをyumでインストールする yum install vsftpd # サービスの自動設定を行う systemctl start vsftpd systemctl enable vsftpd systemctl status vsftpd.service # 確認 systemctl is-enabled vsftpd.service # 確認 # アクセス</description>
+    </item>
+    
+    <item>
+      <title>CentOS7へFilezillaをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1065/</link>
+      <pubDate>Sun, 08 Nov 2015 04:03:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1065/</guid>
+      <description>FileZillaをインストールする yum -y install epel-release yum -y install filezilla 参考サイト How to Install FileZilla on CentOS 7 – e Learning</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でPDFにパスワードを掛ける</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1060/</link>
+      <pubDate>Sat, 07 Nov 2015 13:14:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1060/</guid>
+      <description>壮年団の文書作成、配布等で名簿を扱う関係でPDFにパスワードを掛けたい場面が出て来た。 pdftkをインストールする yum install pdftk パスワードを設定する</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにインストールしたCentOS7でVNCを利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1038/</link>
+      <pubDate>Thu, 29 Oct 2015 17:09:54 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1038/</guid>
+      <description>1. 必要なパッケージのインストール yum install tigervnc-server yum groupinstall &amp;quot;GNOME Desktop&amp;quot; yum install vnc VNCサーバの設定 cp /lib/systemd/system/vncserver@.service \ /etc/systemd/system/vncserver@:1.service vi /etc/systemd/system/vncserver@:1.service #&amp;amp;lt;USER&amp;amp;gt;をVNC USER</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でGnome Terminalにショートカットキーを設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1030/</link>
+      <pubDate>Thu, 29 Oct 2015 13:39:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1030/</guid>
+      <description>ショートカットキーを設定する [アプリケーション]–[システムツール]–[設定]–[キーボード]–[ショートカット]–**[独自のショートカッ</description>
+    </item>
+    
+    <item>
+      <title>CentOS7のディスクイメージを作成する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1027/</link>
+      <pubDate>Sat, 03 Oct 2015 12:43:59 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1027/</guid>
+      <description>CentOSのHPよりダウンロード、ImgBurnで作成。 参考サイト ImgBurnの簡単な使い方･設定の解説</description>
+    </item>
+    
+    <item>
+      <title>CentOS7にPHP5.6をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1022/</link>
+      <pubDate>Tue, 15 Sep 2015 16:57:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1022/</guid>
+      <description>CentOS7にyumでPHPをインストールしようとしたがバージョンが5.4と古かったのでremiで5.6をインストールする。 remiリポジ</description>
+    </item>
+    
+    <item>
+      <title>CentOS7にffmpegをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1018/</link>
+      <pubDate>Tue, 11 Aug 2015 04:47:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1018/</guid>
+      <description>壮年団の動画をWindows7で編集しようとしたが、PCへの負担も大きく、HDDの消耗や故障も懸念される事からさくらのVPS上のCentOS</description>
+    </item>
+    
+    <item>
+      <title>Windows7にVirtualBoxをインストールしCentOS7をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1003/</link>
+      <pubDate>Tue, 11 Aug 2015 03:47:53 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1003/</guid>
+      <description>ノートPCをlenovoからdynabookに替えたので新しく作業環境を整える必要が出てきた。CentOSも世の中の流れがだんだんと「6」か</description>
+    </item>
+    
+    <item>
+      <title>Poderosaで『unknown terminal type.』エラーが出た時の対応</title>
+      <link>https://tomonorimatsumura.github.io/blog/p999/</link>
+      <pubDate>Tue, 23 Jun 2015 17:21:35 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p999/</guid>
+      <description>Windows7のPoderosaからCentOS7へSSH接続し、MariaDBへログインしようとしたら以下のメッセージが表示された。 &amp;quot;kterm&amp;quot;: unknown</description>
+    </item>
+    
+    <item>
+      <title>Windows7にGitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p990/</link>
+      <pubDate>Fri, 29 May 2015 13:38:28 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p990/</guid>
+      <description>壮年団の写真及び動画整理の関係で、コマンドプロンプトのプログラミングコードを書く必要が出てきた。Windows機からGitが直接使えた方が作</description>
+    </item>
+    
+    <item>
+      <title>RedmineとGitの連携についてのメモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p985/</link>
+      <pubDate>Thu, 28 May 2015 13:06:32 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p985/</guid>
+      <description>コミットメッセージにチケット番号を付与する時は半角スペースで区切る。 コミットメッセージに作業時間を記録することが出来る EclipseでGit</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.6にffmpegをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p979/</link>
+      <pubDate>Mon, 27 Apr 2015 12:21:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p979/</guid>
+      <description>壮年団の動画をWindows7で編集しようとしたが、PCへの負担も大きく、HDDの消耗や故障も懸念される事からさくらのVPS上のCentOS</description>
+    </item>
+    
+    <item>
+      <title>ImageMagicで画像ファイルをPDF化する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p977/</link>
+      <pubDate>Mon, 27 Apr 2015 09:37:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p977/</guid>
+      <description>画像ファイルをPDF化する機会があったのでImageMagicを使い、レンタルサーバで処理させてみた。 ImageMagciをインストールする</description>
+    </item>
+    
+    <item>
+      <title>iPhoneのデータを抜き出す</title>
+      <link>https://tomonorimatsumura.github.io/blog/p974/</link>
+      <pubDate>Sun, 22 Mar 2015 09:25:22 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p974/</guid>
+      <description>iFunbox</description>
+    </item>
+    
+    <item>
+      <title>iPadにWindowsから写真を同期させる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p970/</link>
+      <pubDate>Sun, 04 Jan 2015 04:17:44 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p970/</guid>
+      <description>iTunesから行う ViewNX2にてファイル名、サイズを変更、Exif情報を削除 Exif情報を削除してからiTunes経由で転送する。Ex</description>
+    </item>
+    
+    <item>
+      <title>CentOSで外付けHDDにカレントディレクトリを移動する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p965/</link>
+      <pubDate>Wed, 17 Dec 2014 20:05:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p965/</guid>
+      <description>コマンド cd /media 参考サイト DVD-ROMのイメージ(ISO)ファイルをマウントしてデータを参照 | Linuxサーバ管理 | OSS Fan</description>
+    </item>
+    
+    <item>
+      <title>awkでファイル名とファイルサイズを表示する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p961/</link>
+      <pubDate>Mon, 15 Dec 2014 11:01:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p961/</guid>
+      <description>ローカルPCからサーバPCにアップロードした複数のファイルがデータ欠損無くアップロードされたか調べる必要があった。 awkコマンド スペースや文</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.5でディスプレーの解像度を変更する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p954/</link>
+      <pubDate>Sun, 17 Aug 2014 16:00:23 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p954/</guid>
+      <description>ドライバの不具合なのか良く分からないが、たまにディスプレーの解像度が正しく設定出来なくなるので手動で変更する。 ディスプレーの状態を確認する #</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにVirtualBox &#43; vagrantをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p951/</link>
+      <pubDate>Wed, 02 Jul 2014 07:39:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p951/</guid>
+      <description>前からやってみたかったので、本腰入れてやってみる。 VirtualBoxをインストールする このサイトを参考にする。 http://qiita.com/Itomaki/items/9a6a314a853cdcd00f80 参考サイト CentOS 上で Vagrant を導入す</description>
+    </item>
+    
+    <item>
+      <title>LibreOfficeを日本語化する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p943/</link>
+      <pubDate>Wed, 07 May 2014 10:28:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p943/</guid>
+      <description>CentOS6.5でLibreOfficeをアンイストールし再インストールしたらメニューが英語表記になってしまった。これを日本語に戻す。 Li</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.5にLibreOffice Baseをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p941/</link>
+      <pubDate>Mon, 05 May 2014 07:51:53 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p941/</guid>
+      <description>CentOS6.5には最初からLibreOfficeが入っている。ただ、データベース管理が出来るBaseが入ってないので、追加でインストール</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.5にVMWare Playerをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p938/</link>
+      <pubDate>Thu, 01 May 2014 15:21:43 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p938/</guid>
+      <description>今までインストール手順をまとめてなかったのでまとめておく VMWare Playerをダウンロードする yumコマンドで簡単にインストール出きるのかと思った</description>
+    </item>
+    
+    <item>
+      <title>PHPを再インストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p930/</link>
+      <pubDate>Fri, 21 Mar 2014 13:17:39 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p930/</guid>
+      <description>PHPをインストールしたりアンインストールしたりしていると、ApacheとPHPの連携が外れてしまう場合がある。その場合はApache、PH</description>
+    </item>
+    
+    <item>
+      <title>Redmine2.4をCentOS6.4にインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p914/</link>
+      <pubDate>Wed, 01 Jan 2014 17:42:18 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p914/</guid>
+      <description>Redmine、CentOSのバージョンが上がったのでインストール手順を再確認する。 SELinuxを無効にする vi /etc/sysconfig/selinux SELINUX=disabled reboot iptablesでHT</description>
+    </item>
+    
+    <item>
+      <title>Virtual BoxにインストールしたCentOS6.4でネットワークを設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p907/</link>
+      <pubDate>Wed, 11 Dec 2013 03:23:04 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p907/</guid>
+      <description>Virtual Box上でCentOS環境を複数作成してテストスクリプトを試す必要が出てきた。その場合のネットワークを設定に関するまとめ。 Ethernet</description>
+    </item>
+    
+    <item>
+      <title>Calc、Baseの項目行を画面上で固定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p899/</link>
+      <pubDate>Tue, 05 Nov 2013 03:35:05 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p899/</guid>
+      <description>１．固定したい項目行の下の行を選択する ２．「ウィンドウ(W)」－「固定(F)」をクリック 参考サイト Calcの項目行を画面上で固定する: Lib</description>
+    </item>
+    
+    <item>
+      <title>Gitで常に除外したい設定を.gitconfig で設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p889/</link>
+      <pubDate>Sun, 20 Oct 2013 11:11:30 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p889/</guid>
+      <description>参考サイト Git で常に除外したい設定を .gitconfig で設定する方法 | ウェブル Eclipse で Git を使う – アンドロイドプロジェクトのリポジトリ作成 – Android 開発入門</description>
+    </item>
+    
+    <item>
+      <title>CentOSでサーバの時刻設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p883/</link>
+      <pubDate>Sun, 06 Oct 2013 09:14:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p883/</guid>
+      <description>どうもディフォルトだとOSの時計が合ってないので自動で同期させるようにする。 NTPをインストールする 想定される環境だと既にインストール済み rpm</description>
+    </item>
+    
+    <item>
+      <title>LibreOfficeからMySQLに接続する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p874/</link>
+      <pubDate>Fri, 04 Oct 2013 04:25:41 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p874/</guid>
+      <description>想定される環境 CentOS6.4 LibreOffice 4.1 JDBCドライバのインストール ### LibreOfficeにJDBCドライバを認識させる LibreOffice Calcを起動 ツール→オプション→</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.4にLibreOfficeをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p871/</link>
+      <pubDate>Tue, 01 Oct 2013 07:09:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p871/</guid>
+      <description>lenovoノートPCのVMWare Player上でゲストOSとして稼働しているCentOS6.4にLibreOfficeをインストールした</description>
+    </item>
+    
+    <item>
+      <title>CentOSで拡張子RARをUnRARをインストールし解凍する方法・コマンド</title>
+      <link>https://tomonorimatsumura.github.io/blog/p867/</link>
+      <pubDate>Wed, 18 Sep 2013 13:51:59 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p867/</guid>
+      <description>CentOSで拡張子RARをUnRARをインストールし解凍する方法・コマンド CentOSで拡張子RARをUnRARをインストールし解凍する方</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにCentOS6.4 i386をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p861/</link>
+      <pubDate>Sun, 15 Sep 2013 16:03:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p861/</guid>
+      <description>VMWare Playerの実験をしようと思い、色々とやってみた。 CentOSのisoファイルをさくらのVPSへアップロードする sftpでイメージをアッ</description>
+    </item>
+    
+    <item>
+      <title>Windows7でTigerVNCを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p859/</link>
+      <pubDate>Sun, 15 Sep 2013 07:49:49 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p859/</guid>
+      <description>以下に注意！ ポートフォワーディングが使えない 日本語入力は『**ctrl + space key』で切り替える。 参考サイト 緋色のスパイラルノート : Fedora16</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にChromiumをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p854/</link>
+      <pubDate>Tue, 03 Sep 2013 06:16:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p854/</guid>
+      <description>CentOSでのChromeのサポートが切れてしまったのでChromiumに乗り換える 想定される環境 CentOS6.4 32bit CentOS6.3以前ではChrom</description>
+    </item>
+    
+    <item>
+      <title>EclipseでPerl::Tidyを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p832/</link>
+      <pubDate>Mon, 15 Jul 2013 13:47:40 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p832/</guid>
+      <description>Eclipse + EPICでPerlで開発を行う場合、コードフォーマッターらしきものがあった方が便利なのでPerl::Tidyをインストールしてみる。 開発</description>
+    </item>
+    
+    <item>
+      <title>EclipseにEPIC | Eclipse Perl Integrarionをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p826/</link>
+      <pubDate>Mon, 15 Jul 2013 04:18:05 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p826/</guid>
+      <description>サーバ管理を円滑にすすめるために、Perlも扱える方が良いと思い、EclipseにEpicをインストールした。 EPICをインストールする 基本</description>
+    </item>
+    
+    <item>
+      <title>.htaccessでディレクトリのファイル一覧を表示させる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p822/</link>
+      <pubDate>Fri, 12 Jul 2013 15:17:47 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p822/</guid>
+      <description>セキュリティ上好ましくはないが、この機能を使いたい時もあるので。 以下の一文を.htaccessに書く。 Options +Indexes 参考サイト htaccessでディレ</description>
+    </item>
+    
+    <item>
+      <title>iPhone、iPadのWi-fi接続設定</title>
+      <link>https://tomonorimatsumura.github.io/blog/p818/</link>
+      <pubDate>Wed, 19 Jun 2013 10:31:27 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p818/</guid>
+      <description>http://wayohoo.com/ios/beginners/buffalo-musen-lan-aoss-can-link.html</description>
+    </item>
+    
+    <item>
+      <title>Chromeでホスト名ごとにズーム設定を記憶する機能を追加する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p812/</link>
+      <pubDate>Thu, 02 May 2013 15:48:07 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p812/</guid>
+      <description>FireFoxで言うところのDefault FullZoom Levelみたいな拡張機能がないか探してたらあった。 AutoZoomをインストールする Chrom</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にChromeをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p807/</link>
+      <pubDate>Thu, 02 May 2013 15:37:24 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p807/</guid>
+      <description>どうもCentOSとFireFoxが相性が悪いのでChromeに乗り換えてみる。 Google YUM リポジトリを有効にする vi /etc/yum.repos.d/google-chorme.repo # 64 bit 版の場合 [google-chrome] name=google-chrome - 64-bit baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64 enabled=1 gpgcheck=1 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</description>
+    </item>
+    
+    <item>
+      <title>さくらのスタンダードにRedmineをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p797/</link>
+      <pubDate>Sun, 31 Mar 2013 11:49:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p797/</guid>
+      <description>実験的にやってみる。 libyamlをインストールする 後々色々とエラーが出るので必ずインストールする！ cd ~/local/src wget http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz tar zxvf yaml-0.1.4.tar.gz cd yaml-0.1.4 ./configure --prefix=~/local make make install Rubyをイ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSのCentOSにVMWare Player &#43; Windows XPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p787/</link>
+      <pubDate>Mon, 25 Mar 2013 01:42:01 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p787/</guid>
+      <description>VMWare Playerをインストールする https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0 さくらのVPSからVMWare Playerを使うにはバイバスを通す必要がある http://communities.vmware.com/docs/DOC-8970 vmx.allowNested = TRUE ローカルのCentOS</description>
+    </item>
+    
+    <item>
+      <title>CentOS6で動画を閲覧する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p782/</link>
+      <pubDate>Wed, 20 Mar 2013 13:49:05 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p782/</guid>
+      <description>TEDからダウンロードした動画をCentOS6でも観たいと思い「VLC media player(VideoLAN Client)」をインストールした。 VLC media playerのインストール</description>
+    </item>
+    
+    <item>
+      <title>Redmineにテーマをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p778/</link>
+      <pubDate>Mon, 18 Mar 2013 12:20:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p778/</guid>
+      <description>現在のところ使い勝手が良いfarend fancyをインストールする。 https://github.com/farend/redmine_th</description>
+    </item>
+    
+    <item>
+      <title>CentOS6のApacheでmod_cacheを設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p770/</link>
+      <pubDate>Mon, 18 Mar 2013 11:50:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p770/</guid>
+      <description>Redmineが若干早くなるかもしれないのでmod_cacheを設定してみた。 mod_cacheのインストール確認を行う 想定される環境だとm</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でApache、PHP、MySQLの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p758/</link>
+      <pubDate>Sat, 16 Mar 2013 16:27:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p758/</guid>
+      <description>記事がバラバラになっているのでまとめておく。 Apacheの自動機動設定を行う 想定される環境だと既にApacheはインストール済み。 service httpd restart chkconfig httpd</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でmod_userdirを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p745/</link>
+      <pubDate>Tue, 12 Mar 2013 17:15:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p745/</guid>
+      <description>動作確認は「http://localhost/~{user}/」にアクセスする。 mod_userdirの設定をする vi /etc/httpd/conf.d/userdir.conf UserDir public_html # 「~/publi</description>
+    </item>
+    
+    <item>
+      <title>EclipseにAptanaをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p739/</link>
+      <pubDate>Tue, 12 Mar 2013 15:22:52 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p739/</guid>
+      <description>Eclipseでプロジェクトを扱うときに静的HTMLで書かれたサイトは「Webプロジェクト」として扱いたいのでAptana Studioをイン</description>
+    </item>
+    
+    <item>
+      <title>CentOSで6.3でを起動時にNum Lockを有効にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p729/</link>
+      <pubDate>Sat, 09 Mar 2013 16:37:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p729/</guid>
+      <description>CentOSを立ち上げたときにいつもキーボードのNum Lockが有効になっておらず面倒なので対応する。 vi /etc/rc.d/rc.sysinit # 以下を末尾に追加する for tty in /dev/tty[1-9]*; do setleds</description>
+    </item>
+    
+    <item>
+      <title>サーバの状態を確認する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p700/</link>
+      <pubDate>Thu, 21 Feb 2013 03:52:56 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p700/</guid>
+      <description>cronでサーバのrebootが効いているのかどうか確認するためのコマンドは「w」 w 12:51:10 up 2 min, 1 user, load average: 0.15, 0.12, 0.05 USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT root pts/1 example.com. 12:49 0.00s 0.02s 0.00s w</description>
+    </item>
+    
+    <item>
+      <title>FireFoxでズームをドメイン毎に指定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p689/</link>
+      <pubDate>Fri, 15 Feb 2013 07:06:00 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p689/</guid>
+      <description>RedmineやWordPressなど、ディフォルトのズームが100%だと文字が小さくて見にくいのでアドオンで対応する。 Default FullZoom Level 5.0をFir</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でVNCをポートフォワーディングで接続する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p687/</link>
+      <pubDate>Thu, 14 Feb 2013 06:53:20 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p687/</guid>
+      <description>SSH接続ポート番号を指定する vncviwerコマンドではSSH接続ポート番号が指定出来ないみたいなので、「/etc/ssh/ssh_con</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でsuをほぼ無効にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p679/</link>
+      <pubDate>Tue, 12 Feb 2013 17:36:11 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p679/</guid>
+      <description>SSHの設定をいじっているときに、一般ユーザーでログインしているのに、パスワードひとつでrootに昇格出来てしまい非常に驚いた。セキュリティ</description>
+    </item>
+    
+    <item>
+      <title>EclipseにEgitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p674/</link>
+      <pubDate>Tue, 12 Feb 2013 08:07:33 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p674/</guid>
+      <description>少し前からEgitを使っているが、ユーザー毎のSSHの設定でかなりハマったのでメモ。 EclipseにEgitをインストールする Windows</description>
+    </item>
+    
+    <item>
+      <title>IS06でテサリングをする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p670/</link>
+      <pubDate>Mon, 11 Feb 2013 20:08:50 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p670/</guid>
+      <description>ADW.Launcherをインストールする</description>
+    </item>
+    
+    <item>
+      <title>Redmineのパフォーマンスチューニング</title>
+      <link>https://tomonorimatsumura.github.io/blog/p667/</link>
+      <pubDate>Sat, 09 Feb 2013 10:59:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p667/</guid>
+      <description>Redmineが若干遅いのでチューニングを試みる。 avahi-daemonを停止する CentOSはディフォルトでavahi-daemonが起</description>
+    </item>
+    
+    <item>
+      <title>公開鍵秘密鍵を設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p663/</link>
+      <pubDate>Sun, 03 Feb 2013 02:22:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p663/</guid>
+      <description>VNC環境で立ち上げたEclipseからEgitで外部gitリポジトリにアクセスする必要が出てきたのでOpenSSHの設定をもう一度見直す キ</description>
+    </item>
+    
+    <item>
+      <title>CentOS6を日本語環境にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p656/</link>
+      <pubDate>Sat, 02 Feb 2013 11:24:18 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p656/</guid>
+      <description>VNC環境で日本語を使いたかったので 日本語関連のパッケージをグループインストールする yum -y groupinstall &amp;quot;Japanese Support&amp;quot; システムの文字セットを変更する vi /etc/sysconfig/i18n # 変更 LANG=&amp;quot;ja_JP.UTF-8&amp;quot; シス</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にFireFoxをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p653/</link>
+      <pubDate>Sat, 02 Feb 2013 11:16:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p653/</guid>
+      <description>VNC環境を整え、VNCサーバ上でもFireFoxが使えると便利だと思い試してみる。 FireFoxをインストールする yum install firefox FireFoxをア</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでVNCを起動する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p646/</link>
+      <pubDate>Sat, 02 Feb 2013 04:26:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p646/</guid>
+      <description>リモート開発をするのに、VNC経由の方が簡単なんじゃないかと思い、VNC環境を入れてみた。一応このサイトの手順通りで大体は環境構築が可能だと</description>
+    </item>
+    
+    <item>
+      <title>ローカルで作成したGitリポジトリをリモートへプッシュする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p640/</link>
+      <pubDate>Sun, 27 Jan 2013 11:31:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p640/</guid>
+      <description>Gitリポジトリの初期化の時に、共有オプションを有効にしないと以下のようなエラーがでる。 remote: error: refusing to update checked out branch: refs/heads/master remote: error: By default, updating the current branch in a non-bare repository remote: error: is denied, because</description>
+    </item>
+    
+    <item>
+      <title>シェルスクリプトのテストを書く</title>
+      <link>https://tomonorimatsumura.github.io/blog/p638/</link>
+      <pubDate>Sat, 26 Jan 2013 20:42:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p638/</guid>
+      <description>どうもシェルスクリプトのテストを書いちゃった方が作業が速い気がして来たのでshunit2を調べてテストを書いてみる事にした。スクリプト言語だ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSで回線速度が遅くアクセスに時間がかかる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p622/</link>
+      <pubDate>Fri, 25 Jan 2013 13:50:04 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p622/</guid>
+      <description>さくらの公式サイトによると、どうやら初期設定で変更をかける必要があるらしい。 ethtoolコマンドでtcp segmentation offloadをoffにする ethtool -K</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にVMware Playerをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p618/</link>
+      <pubDate>Tue, 22 Jan 2013 05:37:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p618/</guid>
+      <description>さくらのVPS上でWindows XPを動かそうと思い、いろいろと画策中。。。 http://dharry.hatenablog.com/entry/20090912/1252690650 http://www.howtoforge.com/vmware_server_centos5.0 http://morishige.jp/blog/archives/43</description>
+    </item>
+    
+    <item>
+      <title>Gitメモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p612/</link>
+      <pubDate>Sun, 20 Jan 2013 18:56:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p612/</guid>
+      <description>git-revertでコミット履歴を消せるらしい。。。 http://www.kernel.org/pub/software/scm/git/docs/git-revert.html 参考サイト http://labs.timedia.co.jp/2011/02/git-various-undo.html</description>
+    </item>
+    
+    <item>
+      <title>Redmineでチケットが新規作成出来ない</title>
+      <link>https://tomonorimatsumura.github.io/blog/p605/</link>
+      <pubDate>Sun, 20 Jan 2013 14:51:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p605/</guid>
+      <description>Redmineでチケットを新たに作成しようと思ったらInternal Errorに遭遇した。調べてみるとファイルを添付したチケットを作成すると</description>
+    </item>
+    
+    <item>
+      <title>Redmineのバージョンを確認する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p596/</link>
+      <pubDate>Sun, 20 Jan 2013 07:52:40 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p596/</guid>
+      <description>Redmineのバージョンを確認するには「ソースから確認する」方法と「管理画面から確認する」方法と2種類ある。 Redmineのバージョンをソ</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にFTPサーバをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p577/</link>
+      <pubDate>Wed, 09 Jan 2013 17:12:27 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p577/</guid>
+      <description>なんとなくやってみた。 vsftpdをインストールする 標準では入って無いのでインストールする yum install vsftpd vsftpd.confを設定する 『/etc/</description>
+    </item>
+    
+    <item>
+      <title>RedmineのMy AccountでInternal Errorが出る</title>
+      <link>https://tomonorimatsumura.github.io/blog/p568/</link>
+      <pubDate>Tue, 08 Jan 2013 10:34:00 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p568/</guid>
+      <description>Redmineの初期設定で、adminでログインして、My Accountから日本語を設定しようとしたらInternal Errorが出た。 Re</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にEPELリポジトリを追加する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p548/</link>
+      <pubDate>Sat, 05 Jan 2013 04:29:24 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p548/</guid>
+      <description>EPELリポジトリを追加する EPELの公式サイトのFAQにインストール方法があった。 # 32bit版64bit版共通 rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm EPELの設定を確認</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRemiリポジトリをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p542/</link>
+      <pubDate>Sat, 05 Jan 2013 04:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p542/</guid>
+      <description>どうやらCentOSでPHP+MySQLのアップデートを行うにはRemiリポジトリが相性が良いらしい。 Remiをインストールする まずEPEL</description>
+    </item>
+    
+    <item>
+      <title>Windows7にVMware Player &#43; CentOS6.3をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p535/</link>
+      <pubDate>Thu, 03 Jan 2013 09:01:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p535/</guid>
+      <description>WindowsでのSSHやgitの設定が非常に手間なのでノートPCにCentOSをそのまま突っ込もうと思いVMware Playerを試す。 C</description>
+    </item>
+    
+    <item>
+      <title>Apacheでサーバ情報の隠蔽を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p521/</link>
+      <pubDate>Wed, 02 Jan 2013 10:09:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p521/</guid>
+      <description>Apacheのセキュリティ対策でサーバ情報の隠蔽を行った方が良いと「サーバ構築の実際がわかる Apache[実践]運用/管理」に書いてあったの</description>
+    </item>
+    
+    <item>
+      <title>cronを使うための準備</title>
+      <link>https://tomonorimatsumura.github.io/blog/p519/</link>
+      <pubDate>Wed, 02 Jan 2013 06:15:18 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p519/</guid>
+      <description>http://centlinuxer.blog37.fc2.com/blog-entry-36.html</description>
+    </item>
+    
+    <item>
+      <title>WordPressをPC閲覧用とスマホ閲覧用に分ける</title>
+      <link>https://tomonorimatsumura.github.io/blog/p516/</link>
+      <pubDate>Wed, 02 Jan 2013 03:28:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p516/</guid>
+      <description>PC用のテンプレートからだとスマホからアクセスした時に表示が見にくいのでWordPressブログをもう一つ用意して同期する。 http://linuxserver.jp/%E3%82%B5%E3%83%BC%E3%83%90%E6%A7%8B%E7%AF%89/DB/MySQL/mysqldump%E3%81%A8cron%E3%81%A7%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97.php</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にWordPressをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p463/</link>
+      <pubDate>Mon, 31 Dec 2012 08:02:40 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p463/</guid>
+      <description>権限の設定でハマったのでメモ。 WordPressをダウンロード、解凍する 最新版はこちらから確認する。 cd /path/to/wordpressfolder wget http://ja.wordpress.org/wordpress-3.5-ja.zip unzip wordpress-3.5-ja.zip #wordpressと言うフ</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3でApache上でRedmineを実行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p459/</link>
+      <pubDate>Mon, 31 Dec 2012 05:24:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p459/</guid>
+      <description>こちらのサイトを参考にした。 Passengerのインストール Phusion Passengerをインストールする gem install passenger --no-rdoc --no-ri PassengerのApache</description>
+    </item>
+    
+    <item>
+      <title>さくらのスタンダードにgitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p444/</link>
+      <pubDate>Mon, 17 Dec 2012 09:12:47 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p444/</guid>
+      <description>ノートPCからさくらのVPSにSSHで繋ごうと思ったのだが、鍵認証の設定がうまくいかず、さくらのスタンダードでもgitを操作出来るようにした</description>
+    </item>
+    
+    <item>
+      <title>Subversionコマンドメモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p434/</link>
+      <pubDate>Thu, 13 Dec 2012 13:07:47 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p434/</guid>
+      <description>http://den2sn.hatenablog.com/entry/20100326/1269589662 どうもうまく行かない。。。。 svnadmin dump /home/smokingarage/var/svn/mvc | svndumpfilter include --drop-empty-revs --renumber-revs /home/smokingarage/var/svn/mvc/neriphp/trunk &amp;amp;gt; neri.dmp svnadmin load /home/smokingarage/var/svn/neriphp &amp;amp;lt; /home/smokingarage/neri.dmp</description>
+    </item>
+    
+    <item>
+      <title>Redmineを使ってプロジェクトを管理する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p429/</link>
+      <pubDate>Tue, 11 Dec 2012 05:20:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p429/</guid>
+      <description>Redmineのインストールが一応終わって正常動作を始めたのでさっそくプロジェクト管理をやってみる。メモでもつけようかと思ったけど、Redm</description>
+    </item>
+    
+    <item>
+      <title>Windwos7で公開鍵秘密鍵を発行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p419/</link>
+      <pubDate>Sun, 09 Dec 2012 11:08:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p419/</guid>
+      <description>PuTTYでssh2プロトコルを使ってssh接続Putytyだとフォーマットの変換などが入り面倒なのでTera Termを使う。</description>
+    </item>
+    
+    <item>
+      <title>PEARに関する覚書き</title>
+      <link>https://tomonorimatsumura.github.io/blog/p413/</link>
+      <pubDate>Sun, 09 Dec 2012 09:00:28 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p413/</guid>
+      <description># PEARの設定を表示する pear config-show Configuration (channel pear.php.net): ===================================== Auto-discover new Channels auto_discover &amp;amp;lt;not set&amp;amp;gt; Default Channel default_channel pear.php.net HTTP Proxy Server Address http_proxy &amp;amp;lt;not set&amp;amp;gt; PEAR server [DEPRECATED] master_server pear.php.net Default Channel Mirror preferred_mirror pear.php.net Remote Configuration File remote_config &amp;amp;lt;not set&amp;amp;gt; PEAR executables directory bin_dir /usr/bin PEAR documentation directory doc_dir /usr/share/pear/doc PHP extension directory ext_dir /usr/lib64/php/modules PEAR directory php_dir</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにJenkins &#43; PHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p402/</link>
+      <pubDate>Sun, 09 Dec 2012 03:58:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p402/</guid>
+      <description>さくらのVPSにJenkins環境を整えるメモ。 Xdebugをインストールする PECLからインストールする pecl install xdebug PHPUnitをインストール</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのPHPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p395/</link>
+      <pubDate>Sat, 08 Dec 2012 17:22:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p395/</guid>
+      <description>Apacheをインストールする # apache用のSSLモジュールもインストールしておく yum -y install httpd httpd-devel mod_ssl PHPをインストールする 一応yumでそのま</description>
+    </item>
+    
+    <item>
+      <title>EclipseでPHPをリモートデバッグする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p393/</link>
+      <pubDate>Sat, 08 Dec 2012 06:55:09 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p393/</guid>
+      <description>Eclipse + PDT + xdebug によるリモートデバッグ環境構築メモ: かわいいは製造可 [ サーバー設定メモ/eclipseでPHPのリモートデバッグ環境をつくる – トヤ</description>
+    </item>
+    
+    <item>
+      <title>EclipseでRemote System Explore(RSE)を使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p383/</link>
+      <pubDate>Fri, 07 Dec 2012 16:28:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p383/</guid>
+      <description>考えてみたらリモートで開発が出きると楽かなと思い、Eclipseでその手の方法がないのか調べたらあった。 https://sites.google.com/site/chobimemo/eclipse/cdt-rdt http://toyao.net/xoops/modules/xpwiki/?%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E8%A8%AD%E5%AE%9A%E3%83%A1%E3%83%A2%2Feclipse%E3%81%A7PHP%E3%81%AE%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E7%92%B0%E5%A2%83%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B EclipseにRemote System E</description>
+    </item>
+    
+    <item>
+      <title>さくらのスタンダードでsftpを使う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p378/</link>
+      <pubDate>Fri, 07 Dec 2012 15:10:19 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p378/</guid>
+      <description>EclipseのRSE(Remote System Explore)を使おうと思い、さくらのスタンダードにEclipseから一向に接続できない。どうやら原</description>
+    </item>
+    
+    <item>
+      <title>CentOS6で端末をショートカットキーで起動させる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p374/</link>
+      <pubDate>Fri, 07 Dec 2012 11:25:32 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p374/</guid>
+      <description>システム→設定→キーボード・ショートカットからデスクトップ→端末の起動の順。 ディフォルトは無効になっていたのでshift+ctrl+Sに設定</description>
+    </item>
+    
+    <item>
+      <title>Eclipseで新規ソフトウェアのインストールでフリーズした時の対処法</title>
+      <link>https://tomonorimatsumura.github.io/blog/p372/</link>
+      <pubDate>Fri, 07 Dec 2012 11:18:04 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p372/</guid>
+      <description>新規ソフトウェアをインストールする時、フィルター機能を使うと、Eclipseがフリーズしてしまうことがある。 Eclipseのキャッシュを削除</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3でFileZillaを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p306/</link>
+      <pubDate>Tue, 04 Dec 2012 01:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p306/</guid>
+      <description>FileZillaをインストールする 最初はgFTPをRPMからインストールしようと思ったけど、依存関係でシステムがイカれるかもとか言う書き込</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でSubversionからgitに移行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p290/</link>
+      <pubDate>Sun, 02 Dec 2012 11:59:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p290/</guid>
+      <description>一人プロジェクトの場合、Subversionみたいなガチガチのバージョン管理を使う必要も無いなと思う所もあり、gitに移行することにした。参</description>
+    </item>
+    
+    <item>
+      <title>EclipseでSVNのデータと比較すると文字化け</title>
+      <link>https://tomonorimatsumura.github.io/blog/p224/</link>
+      <pubDate>Sat, 01 Dec 2012 16:03:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p224/</guid>
+      <description>http://d.hatena.ne.jp/enokitech/20090501/1241142788 まっつんのブログ まっつんのブログ 設定→一般→コンテンツ・タイプ の「テキスト」から、エンコード タイプを変更したいファイルの拡張子 を選択し、下</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にJenkinsをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p201/</link>
+      <pubDate>Fri, 30 Nov 2012 15:59:15 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p201/</guid>
+      <description>Javaをインストールする Javaがインストールされていない場合はインストールする。 rpm -qa java-1.7.0-openjdk yum -y install java-1.7.0-openjdk Jenkinsをインストールする 基本的には</description>
+    </item>
+    
+    <item>
+      <title>WordPressの引越し</title>
+      <link>https://tomonorimatsumura.github.io/blog/p199/</link>
+      <pubDate>Fri, 30 Nov 2012 13:05:11 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p199/</guid>
+      <description>WordPressをIPアドレス規制をかけてアクセスさせるように設定しようと思い、.htaccessにアクセス可能IPアドレスを記述。しかし</description>
+    </item>
+    
+    <item>
+      <title>capybara-webkitについて</title>
+      <link>https://tomonorimatsumura.github.io/blog/p195/</link>
+      <pubDate>Wed, 28 Nov 2012 14:27:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p195/</guid>
+      <description>http://blog.uu59.org/2012-09-19-capybara-webkit-crawler.html PHPでウェブブラウザを作る http://chobie.hatenablog.com/entry/2012/03/18/220103</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRedmine環境を構築する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p190/</link>
+      <pubDate>Mon, 26 Nov 2012 17:13:25 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p190/</guid>
+      <description>Tracがどうも使いにくいのでRedmineに移行してみる実験をする。 CentOSパッケージの追加インストール まずはEPELが導入されている</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのMySQLとphpMyAdminをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p187/</link>
+      <pubDate>Sun, 25 Nov 2012 17:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p187/</guid>
+      <description>yumからのインストールだと、MySQL5.1系がインストールされ、どうやらこれがPHP5.4.9と親和性が取れないらしく、phpMyAdm</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にPECL::ssh2をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p183/</link>
+      <pubDate>Sun, 25 Nov 2012 14:10:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p183/</guid>
+      <description>PECL::ssh2をインストールする インストールにはPEARおよびlibssh2、libssh2-develが必要。適宜インストールしてお</description>
+    </item>
+    
+    <item>
+      <title>Windows XPの再インストールメモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p174/</link>
+      <pubDate>Sun, 18 Nov 2012 12:47:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p174/</guid>
+      <description>デスクトップにWindows XP環境を構築するときのメモ データのバックアップ Subversionやgit等も使い、忘れずに行う。 LANドライ</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にgitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p165/</link>
+      <pubDate>Fri, 16 Nov 2012 15:45:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p165/</guid>
+      <description>gitを使う必要が出てきたのでインストール。 必要環境の確認 まずgitのサポートページで必要ライブラリを確認。どうやらcURLやopenSSL</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にEclipse &#43; Pleiades &#43; PDTをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p157/</link>
+      <pubDate>Thu, 15 Nov 2012 06:33:56 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p157/</guid>
+      <description>Eclipseをインストールする http://www.eclipse.org/downloads/より「Eclipse Classic 4.2.1」を選択し</description>
+    </item>
+    
+    <item>
+      <title>CentOSでシステム情報を表示する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p143/</link>
+      <pubDate>Mon, 12 Nov 2012 14:23:27 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p143/</guid>
+      <description>uname &amp;lt;td&amp;gt; 説明 &amp;lt;/td&amp;gt; &amp;lt;th&amp;gt; 全てのシステム情報を表示 &amp;lt;/th&amp;gt; &amp;lt;th&amp;gt; ハードウェアタイプを表示 &amp;lt;/th&amp;gt; &amp;lt;th&amp;gt; ネットワーク上のホスト名を表示 &amp;lt;/th&amp;gt; &amp;lt;th&amp;gt; OSのリリース番号を表示 &amp;lt;/th&amp;gt; &amp;lt;th&amp;gt; システム名</description>
+    </item>
+    
+    <item>
+      <title>WordPressで改行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p140/</link>
+      <pubDate>Mon, 12 Nov 2012 12:06:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p140/</guid>
+      <description>「＆nbsp;（※＆は小文字）」を使うSEO的に良くないのでスタイルシートで調整する。</description>
+    </item>
+    
+    <item>
+      <title>Windows7 &#43; XAMPPでPerlを使う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p118/</link>
+      <pubDate>Mon, 12 Nov 2012 11:31:50 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p118/</guid>
+      <description>EclipseにEPIC – Eclipse Perl Integrationをインストールする 「ヘルプ」→「新規ソフトウェアのインストール」→「使用可能なソフトウェ</description>
+    </item>
+    
+    <item>
+      <title>Linuxでの文字列の検索</title>
+      <link>https://tomonorimatsumura.github.io/blog/p116/</link>
+      <pubDate>Sun, 11 Nov 2012 18:17:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p116/</guid>
+      <description>cd /path/to/target/dir find . | xargs grep &amp;quot;seach&amp;quot;</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にGIMPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p97/</link>
+      <pubDate>Fri, 09 Nov 2012 12:14:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p97/</guid>
+      <description>そろそろGIMPを覚えようと思いインストール。ちなみにGIMPとは「The GNU Image Manipulation Program」の略。 GIMPをインストールする yum install gimp gimp -v</description>
+    </item>
+    
+    <item>
+      <title>CentOSにFastCGIをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p43/</link>
+      <pubDate>Sun, 28 Oct 2012 10:54:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p43/</guid>
+      <description>どうやらRubyをCentOSで動かすにはFastCGIと言って、動作をキャッシュするような仕組みをインストール刷る必要があるらしい。 Fas</description>
+    </item>
+    
+    <item>
+      <title>Apacheでmod_status.soを有効にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p31/</link>
+      <pubDate>Sun, 28 Oct 2012 04:35:33 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p31/</guid>
+      <description>インストールしたmod_fastcgiが動いているかどうか確認しようとして</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でApacheの設定</title>
+      <link>https://tomonorimatsumura.github.io/blog/p27/</link>
+      <pubDate>Sat, 27 Oct 2012 12:18:42 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p27/</guid>
+      <description>httpd: Could not reliably determine the server’s fully qualified domain name, using 127.0.0.1 for ServerName エラーに対する処理 http://blog.dacelo.info/apache/entry-713.html http://d.hatena.ne.jp/geek_it/20090824/1251131134 mod_fasitcgiのインストール手順 Makefileのディレクトリの</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRuby1.9をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p13/</link>
+      <pubDate>Thu, 25 Oct 2012 10:37:11 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p13/</guid>
+      <description>そろそろPHPに見切りをつけようと思い、Rubyの勉強のためRuby環境をローカルに構築する。 このサイトを参考にRPM（Ruby Package Manag</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでSSHの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p5/</link>
+      <pubDate>Thu, 04 Oct 2012 08:51:41 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p5/</guid>
+      <description>秘密鍵および公開鍵の作成 ローカルのCentOSから ssh-keygen -t rsa これで、/root/.sshに、秘密鍵(id_rsa)と公開鍵(id_rsa.pub</description>
+    </item>
+    
+    <item>
+      <title>Windows XP sp3でのEclipse &#43; PHPUnitに関する覚書</title>
+      <link>https://tomonorimatsumura.github.io/blog/p335/</link>
+      <pubDate>Sun, 08 Jul 2012 10:29:23 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p335/</guid>
+      <description>ショートカットキーの設定 -Confort Mouse 4500のドライバをインストール -Confort Mouse 4500のプログラムの設定にEclipseを追加 -Eclipseでショートカ</description>
+    </item>
+    
+    <item>
+      <title>さくらのレンタルサーバーにTracをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p235/</link>
+      <pubDate>Tue, 03 Jul 2012 08:59:07 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p235/</guid>
+      <description>えらく嵌まったのでメモ。さくらのpythonアップデートがあると使えないかもしれないので注意。 今回入れたのはPython2.7.3 インストー</description>
+    </item>
+    
+    <item>
+      <title>スマホサイトに関する覚書き DOCTYPE宣言</title>
+      <link>https://tomonorimatsumura.github.io/blog/p232/</link>
+      <pubDate>Sat, 26 Nov 2011 12:09:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p232/</guid>
+      <description>スマホサイトを作るにあたり、覚書きみたいなもの。 [html] [/html] ヤフーのiPhone版サイトがこんな感じなので、これに順ずるものにしておくのが無難か？</description>
+    </item>
+    
+    <item>
+      <title>XAMPPにPerl::Criticをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p229/</link>
+      <pubDate>Mon, 14 Nov 2011 11:43:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p229/</guid>
+      <description>前投稿からの続き 【ＸＡＭＰＰにPerltidyをインストールする】 http://ameblo.jp/smackmybitchup/entry-11078527558.html 環境 Windows XP ver3 XAMPP 1.7.3 Perltidyをインストールできたので勢いに任せてPer</description>
+    </item>
+    
+    <item>
+      <title>ＸＡＭＰＰ ver 1.7.3にPHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p220/</link>
+      <pubDate>Sun, 06 Nov 2011 06:28:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p220/</guid>
+      <description>http://sinsengumi.net/blog/2010/09/xampp-1-7-3%E3%81%ABphpunit-3-5%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</description>
+    </item>
+    
+    <item>
+      <title>ＸＡＭＰＰにPerltidyをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p226/</link>
+      <pubDate>Wed, 02 Nov 2011 09:38:17 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p226/</guid>
+      <description>Perlを始めるにあたり、どうやらPerltidyなるものが必要らしいと言う事でインストールしてみた。 http://perltidy.sourceforge.net/ 環境は Win XP Xampp 1.7.3 いきなり『cpan Pe</description>
+    </item>
+    
+    <item>
+      <title>作業メモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p238/</link>
+      <pubDate>Fri, 28 Oct 2011 15:32:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p238/</guid>
+      <description>tableHandlerAbstract データベース接続クラスを切り分ける ModelAbstract setCache → saveCacheか他の名前 creatCache() PathFramework try – catch にする</description>
+    </item>
+    
+    <item>
+      <title>スマホ用に表示幅を変える</title>
+      <link>https://tomonorimatsumura.github.io/blog/p209/</link>
+      <pubDate>Wed, 23 Feb 2011 23:15:33 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p209/</guid>
+      <description>掲示板の設定をスマホ用に変える。 メタ情報にJavaScriptでアペンドチャイルドする。長いのでビヨンセする（発音がデスチャに似てるから）と</description>
+    </item>
+    
+    <item>
+      <title>Amebaのフィード取得で嵌った件</title>
+      <link>https://tomonorimatsumura.github.io/blog/p215/</link>
+      <pubDate>Sat, 19 Feb 2011 08:35:22 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p215/</guid>
+      <description>CURLライブラリのマルチ機能を試そうと思い、AKB48のメンバーブログのフィードの一気解析を実行。 // フィードURLの設定 $arFeedUrl = array( ‘http:</description>
+    </item>
+    
+  </channel>
+</rss>

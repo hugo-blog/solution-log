@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CentOS6 on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/centos6/</link>
+    <description>Recent content in CentOS6 on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 28 Jan 2017 13:33:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/centos6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7でSeleniumをDockerコンテナで利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1206/</link>
+      <pubDate>Sat, 28 Jan 2017 13:33:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1206/</guid>
+      <description>DockerをインストールしFirefoxコンテナを立ち上げる yum install docker systemctl start docker sytemctl enable docker docker run -d -p 4444:4444 selenium/standalone-firefox:latest Python Seleniumをインストールする yum install epel-release yum install python-pip</description>
+    </item>
+    
+    <item>
+      <title>CentOSで外付けHDDにカレントディレクトリを移動する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p965/</link>
+      <pubDate>Wed, 17 Dec 2014 20:05:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p965/</guid>
+      <description>コマンド cd /media 参考サイト DVD-ROMのイメージ(ISO)ファイルをマウントしてデータを参照 | Linuxサーバ管理 | OSS Fan</description>
+    </item>
+    
+    <item>
+      <title>CentOSでサーバの時刻設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p883/</link>
+      <pubDate>Sun, 06 Oct 2013 09:14:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p883/</guid>
+      <description>どうもディフォルトだとOSの時計が合ってないので自動で同期させるようにする。 NTPをインストールする 想定される環境だと既にインストール済み rpm</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにCentOS6.4 i386をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p861/</link>
+      <pubDate>Sun, 15 Sep 2013 16:03:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p861/</guid>
+      <description>VMWare Playerの実験をしようと思い、色々とやってみた。 CentOSのisoファイルをさくらのVPSへアップロードする sftpでイメージをアッ</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にChromeをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p807/</link>
+      <pubDate>Thu, 02 May 2013 15:37:24 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p807/</guid>
+      <description>どうもCentOSとFireFoxが相性が悪いのでChromeに乗り換えてみる。 Google YUM リポジトリを有効にする vi /etc/yum.repos.d/google-chorme.repo # 64 bit 版の場合 [google-chrome] name=google-chrome - 64-bit baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64 enabled=1 gpgcheck=1 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSのCentOSにVMWare Player &#43; Windows XPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p787/</link>
+      <pubDate>Mon, 25 Mar 2013 01:42:01 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p787/</guid>
+      <description>VMWare Playerをインストールする https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/5_0 さくらのVPSからVMWare Playerを使うにはバイバスを通す必要がある http://communities.vmware.com/docs/DOC-8970 vmx.allowNested = TRUE ローカルのCentOS</description>
+    </item>
+    
+    <item>
+      <title>CentOS6で動画を閲覧する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p782/</link>
+      <pubDate>Wed, 20 Mar 2013 13:49:05 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p782/</guid>
+      <description>TEDからダウンロードした動画をCentOS6でも観たいと思い「VLC media player(VideoLAN Client)」をインストールした。 VLC media playerのインストール</description>
+    </item>
+    
+    <item>
+      <title>CentOS6のApacheでmod_cacheを設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p770/</link>
+      <pubDate>Mon, 18 Mar 2013 11:50:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p770/</guid>
+      <description>Redmineが若干早くなるかもしれないのでmod_cacheを設定してみた。 mod_cacheのインストール確認を行う 想定される環境だとm</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でApache、PHP、MySQLの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p758/</link>
+      <pubDate>Sat, 16 Mar 2013 16:27:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p758/</guid>
+      <description>記事がバラバラになっているのでまとめておく。 Apacheの自動機動設定を行う 想定される環境だと既にApacheはインストール済み。 service httpd restart chkconfig httpd</description>
+    </item>
+    
+    <item>
+      <title>CentOSで6.3でを起動時にNum Lockを有効にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p729/</link>
+      <pubDate>Sat, 09 Mar 2013 16:37:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p729/</guid>
+      <description>CentOSを立ち上げたときにいつもキーボードのNum Lockが有効になっておらず面倒なので対応する。 vi /etc/rc.d/rc.sysinit # 以下を末尾に追加する for tty in /dev/tty[1-9]*; do setleds</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でVNCをポートフォワーディングで接続する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p687/</link>
+      <pubDate>Thu, 14 Feb 2013 06:53:20 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p687/</guid>
+      <description>SSH接続ポート番号を指定する vncviwerコマンドではSSH接続ポート番号が指定出来ないみたいなので、「/etc/ssh/ssh_con</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でsuをほぼ無効にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p679/</link>
+      <pubDate>Tue, 12 Feb 2013 17:36:11 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p679/</guid>
+      <description>SSHの設定をいじっているときに、一般ユーザーでログインしているのに、パスワードひとつでrootに昇格出来てしまい非常に驚いた。セキュリティ</description>
+    </item>
+    
+    <item>
+      <title>Redmineのパフォーマンスチューニング</title>
+      <link>https://tomonorimatsumura.github.io/blog/p667/</link>
+      <pubDate>Sat, 09 Feb 2013 10:59:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p667/</guid>
+      <description>Redmineが若干遅いのでチューニングを試みる。 avahi-daemonを停止する CentOSはディフォルトでavahi-daemonが起</description>
+    </item>
+    
+    <item>
+      <title>公開鍵秘密鍵を設定する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p663/</link>
+      <pubDate>Sun, 03 Feb 2013 02:22:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p663/</guid>
+      <description>VNC環境で立ち上げたEclipseからEgitで外部gitリポジトリにアクセスする必要が出てきたのでOpenSSHの設定をもう一度見直す キ</description>
+    </item>
+    
+    <item>
+      <title>CentOS6を日本語環境にする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p656/</link>
+      <pubDate>Sat, 02 Feb 2013 11:24:18 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p656/</guid>
+      <description>VNC環境で日本語を使いたかったので 日本語関連のパッケージをグループインストールする yum -y groupinstall &amp;quot;Japanese Support&amp;quot; システムの文字セットを変更する vi /etc/sysconfig/i18n # 変更 LANG=&amp;quot;ja_JP.UTF-8&amp;quot; シス</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にFireFoxをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p653/</link>
+      <pubDate>Sat, 02 Feb 2013 11:16:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p653/</guid>
+      <description>VNC環境を整え、VNCサーバ上でもFireFoxが使えると便利だと思い試してみる。 FireFoxをインストールする yum install firefox FireFoxをア</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでVNCを起動する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p646/</link>
+      <pubDate>Sat, 02 Feb 2013 04:26:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p646/</guid>
+      <description>リモート開発をするのに、VNC経由の方が簡単なんじゃないかと思い、VNC環境を入れてみた。一応このサイトの手順通りで大体は環境構築が可能だと</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSで回線速度が遅くアクセスに時間がかかる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p622/</link>
+      <pubDate>Fri, 25 Jan 2013 13:50:04 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p622/</guid>
+      <description>さくらの公式サイトによると、どうやら初期設定で変更をかける必要があるらしい。 ethtoolコマンドでtcp segmentation offloadをoffにする ethtool -K</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にVMware Playerをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p618/</link>
+      <pubDate>Tue, 22 Jan 2013 05:37:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p618/</guid>
+      <description>さくらのVPS上でWindows XPを動かそうと思い、いろいろと画策中。。。 http://dharry.hatenablog.com/entry/20090912/1252690650 http://www.howtoforge.com/vmware_server_centos5.0 http://morishige.jp/blog/archives/43</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にFTPサーバをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p577/</link>
+      <pubDate>Wed, 09 Jan 2013 17:12:27 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p577/</guid>
+      <description>なんとなくやってみた。 vsftpdをインストールする 標準では入って無いのでインストールする yum install vsftpd vsftpd.confを設定する 『/etc/</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にEPELリポジトリを追加する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p548/</link>
+      <pubDate>Sat, 05 Jan 2013 04:29:24 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p548/</guid>
+      <description>EPELリポジトリを追加する EPELの公式サイトのFAQにインストール方法があった。 # 32bit版64bit版共通 rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm EPELの設定を確認</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRemiリポジトリをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p542/</link>
+      <pubDate>Sat, 05 Jan 2013 04:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p542/</guid>
+      <description>どうやらCentOSでPHP+MySQLのアップデートを行うにはRemiリポジトリが相性が良いらしい。 Remiをインストールする まずEPEL</description>
+    </item>
+    
+    <item>
+      <title>cronを使うための準備</title>
+      <link>https://tomonorimatsumura.github.io/blog/p519/</link>
+      <pubDate>Wed, 02 Jan 2013 06:15:18 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p519/</guid>
+      <description>http://centlinuxer.blog37.fc2.com/blog-entry-36.html</description>
+    </item>
+    
+    <item>
+      <title>WordPressをPC閲覧用とスマホ閲覧用に分ける</title>
+      <link>https://tomonorimatsumura.github.io/blog/p516/</link>
+      <pubDate>Wed, 02 Jan 2013 03:28:58 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p516/</guid>
+      <description>PC用のテンプレートからだとスマホからアクセスした時に表示が見にくいのでWordPressブログをもう一つ用意して同期する。 http://linuxserver.jp/%E3%82%B5%E3%83%BC%E3%83%90%E6%A7%8B%E7%AF%89/DB/MySQL/mysqldump%E3%81%A8cron%E3%81%A7%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97.php</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にWordPressをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p463/</link>
+      <pubDate>Mon, 31 Dec 2012 08:02:40 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p463/</guid>
+      <description>権限の設定でハマったのでメモ。 WordPressをダウンロード、解凍する 最新版はこちらから確認する。 cd /path/to/wordpressfolder wget http://ja.wordpress.org/wordpress-3.5-ja.zip unzip wordpress-3.5-ja.zip #wordpressと言うフ</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSにJenkins &#43; PHPUnitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p402/</link>
+      <pubDate>Sun, 09 Dec 2012 03:58:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p402/</guid>
+      <description>さくらのVPSにJenkins環境を整えるメモ。 Xdebugをインストールする PECLからインストールする pecl install xdebug PHPUnitをインストール</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのPHPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p395/</link>
+      <pubDate>Sat, 08 Dec 2012 17:22:48 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p395/</guid>
+      <description>Apacheをインストールする # apache用のSSLモジュールもインストールしておく yum -y install httpd httpd-devel mod_ssl PHPをインストールする 一応yumでそのま</description>
+    </item>
+    
+    <item>
+      <title>CentOS6で端末をショートカットキーで起動させる</title>
+      <link>https://tomonorimatsumura.github.io/blog/p374/</link>
+      <pubDate>Fri, 07 Dec 2012 11:25:32 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p374/</guid>
+      <description>システム→設定→キーボード・ショートカットからデスクトップ→端末の起動の順。 ディフォルトは無効になっていたのでshift+ctrl+Sに設定</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3でFileZillaを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p306/</link>
+      <pubDate>Tue, 04 Dec 2012 01:32:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p306/</guid>
+      <description>FileZillaをインストールする 最初はgFTPをRPMからインストールしようと思ったけど、依存関係でシステムがイカれるかもとか言う書き込</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でSubversionからgitに移行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p290/</link>
+      <pubDate>Sun, 02 Dec 2012 11:59:34 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p290/</guid>
+      <description>一人プロジェクトの場合、Subversionみたいなガチガチのバージョン管理を使う必要も無いなと思う所もあり、gitに移行することにした。参</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にJenkinsをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p201/</link>
+      <pubDate>Fri, 30 Nov 2012 15:59:15 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p201/</guid>
+      <description>Javaをインストールする Javaがインストールされていない場合はインストールする。 rpm -qa java-1.7.0-openjdk yum -y install java-1.7.0-openjdk Jenkinsをインストールする 基本的には</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRedmine環境を構築する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p190/</link>
+      <pubDate>Mon, 26 Nov 2012 17:13:25 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p190/</guid>
+      <description>Tracがどうも使いにくいのでRedmineに移行してみる実験をする。 CentOSパッケージの追加インストール まずはEPELが導入されている</description>
+    </item>
+    
+    <item>
+      <title>CentOS6に最新バージョンのMySQLとphpMyAdminをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p187/</link>
+      <pubDate>Sun, 25 Nov 2012 17:04:21 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p187/</guid>
+      <description>yumからのインストールだと、MySQL5.1系がインストールされ、どうやらこれがPHP5.4.9と親和性が取れないらしく、phpMyAdm</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にPECL::ssh2をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p183/</link>
+      <pubDate>Sun, 25 Nov 2012 14:10:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p183/</guid>
+      <description>PECL::ssh2をインストールする インストールにはPEARおよびlibssh2、libssh2-develが必要。適宜インストールしてお</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にgitをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p165/</link>
+      <pubDate>Fri, 16 Nov 2012 15:45:38 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p165/</guid>
+      <description>gitを使う必要が出てきたのでインストール。 必要環境の確認 まずgitのサポートページで必要ライブラリを確認。どうやらcURLやopenSSL</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にEclipse &#43; Pleiades &#43; PDTをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p157/</link>
+      <pubDate>Thu, 15 Nov 2012 06:33:56 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p157/</guid>
+      <description>Eclipseをインストールする http://www.eclipse.org/downloads/より「Eclipse Classic 4.2.1」を選択し</description>
+    </item>
+    
+    <item>
+      <title>CentOS6にGIMPをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p97/</link>
+      <pubDate>Fri, 09 Nov 2012 12:14:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p97/</guid>
+      <description>そろそろGIMPを覚えようと思いインストール。ちなみにGIMPとは「The GNU Image Manipulation Program」の略。 GIMPをインストールする yum install gimp gimp -v</description>
+    </item>
+    
+    <item>
+      <title>CentOSにFastCGIをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p43/</link>
+      <pubDate>Sun, 28 Oct 2012 10:54:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p43/</guid>
+      <description>どうやらRubyをCentOSで動かすにはFastCGIと言って、動作をキャッシュするような仕組みをインストール刷る必要があるらしい。 Fas</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でApacheの設定</title>
+      <link>https://tomonorimatsumura.github.io/blog/p27/</link>
+      <pubDate>Sat, 27 Oct 2012 12:18:42 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p27/</guid>
+      <description>httpd: Could not reliably determine the server’s fully qualified domain name, using 127.0.0.1 for ServerName エラーに対する処理 http://blog.dacelo.info/apache/entry-713.html http://d.hatena.ne.jp/geek_it/20090824/1251131134 mod_fasitcgiのインストール手順 Makefileのディレクトリの</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRuby1.9をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p13/</link>
+      <pubDate>Thu, 25 Oct 2012 10:37:11 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p13/</guid>
+      <description>そろそろPHPに見切りをつけようと思い、Rubyの勉強のためRuby環境をローカルに構築する。 このサイトを参考にRPM（Ruby Package Manag</description>
+    </item>
+    
+  </channel>
+</rss>

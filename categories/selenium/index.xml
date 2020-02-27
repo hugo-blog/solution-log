@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selenium on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/selenium/</link>
+    <description>Recent content in Selenium on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 14 Feb 2017 10:48:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/selenium/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Seleniumでコマンドラインでページソースを取得する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1223/</link>
+      <pubDate>Tue, 14 Feb 2017 10:48:26 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1223/</guid>
+      <description>Selenium、Pythonの設定方法は『CentOS7にSeleniuimをインストールする』を参考にする。 スクリプトの書き方 import sys import os import</description>
+    </item>
+    
+    <item>
+      <title>Seleniumでコマンドラインでページタイトルを取得する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1216/</link>
+      <pubDate>Tue, 14 Feb 2017 10:11:31 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1216/</guid>
+      <description>Selenium、Pythonの設定方法は『CentOS7にSeleniuimをインストールする』を参考にする スクリプトの書き方 import sys from selenium import webdriver</description>
+    </item>
+    
+    <item>
+      <title>CentOS7でSeleniumをDockerコンテナで利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1206/</link>
+      <pubDate>Sat, 28 Jan 2017 13:33:06 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1206/</guid>
+      <description>DockerをインストールしFirefoxコンテナを立ち上げる yum install docker systemctl start docker sytemctl enable docker docker run -d -p 4444:4444 selenium/standalone-firefox:latest Python Seleniumをインストールする yum install epel-release yum install python-pip</description>
+    </item>
+    
+    <item>
+      <title>CentOS7にSeleniuimをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1201/</link>
+      <pubDate>Sun, 18 Dec 2016 14:52:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1201/</guid>
+      <description>Pipをインストールする yum install epel-release yum install python-pip pip install --upgrade pip Xvfbをインストールする ブラウザを立ち上げずにSeleniumを操作するのに必要なライブラリを</description>
+    </item>
+    
+  </channel>
+</rss>

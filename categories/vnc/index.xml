@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VNC on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/vnc/</link>
+    <description>Recent content in VNC on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 29 Oct 2015 17:09:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/vnc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>さくらのVPSにインストールしたCentOS7でVNCを利用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1038/</link>
+      <pubDate>Thu, 29 Oct 2015 17:09:54 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1038/</guid>
+      <description>1. 必要なパッケージのインストール yum install tigervnc-server yum groupinstall &amp;quot;GNOME Desktop&amp;quot; yum install vnc VNCサーバの設定 cp /lib/systemd/system/vncserver@.service \ /etc/systemd/system/vncserver@:1.service vi /etc/systemd/system/vncserver@:1.service #&amp;amp;lt;USER&amp;amp;gt;をVNC USER</description>
+    </item>
+    
+    <item>
+      <title>Windows7でTigerVNCを使用する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p859/</link>
+      <pubDate>Sun, 15 Sep 2013 07:49:49 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p859/</guid>
+      <description>以下に注意！ ポートフォワーディングが使えない 日本語入力は『**ctrl + space key』で切り替える。 参考サイト 緋色のスパイラルノート : Fedora16</description>
+    </item>
+    
+    <item>
+      <title>CentOS6でVNCをポートフォワーディングで接続する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p687/</link>
+      <pubDate>Thu, 14 Feb 2013 06:53:20 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p687/</guid>
+      <description>SSH接続ポート番号を指定する vncviwerコマンドではSSH接続ポート番号が指定出来ないみたいなので、「/etc/ssh/ssh_con</description>
+    </item>
+    
+    <item>
+      <title>さくらのVPSでVNCを起動する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p646/</link>
+      <pubDate>Sat, 02 Feb 2013 04:26:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p646/</guid>
+      <description>リモート開発をするのに、VNC経由の方が簡単なんじゃないかと思い、VNC環境を入れてみた。一応このサイトの手順通りで大体は環境構築が可能だと</description>
+    </item>
+    
+  </channel>
+</rss>

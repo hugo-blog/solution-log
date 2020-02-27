@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows XP on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/windows-xp/</link>
+    <description>Recent content in Windows XP on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 22 Jan 2013 05:37:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/windows-xp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6.3にVMware Playerをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p618/</link>
+      <pubDate>Tue, 22 Jan 2013 05:37:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p618/</guid>
+      <description>さくらのVPS上でWindows XPを動かそうと思い、いろいろと画策中。。。 http://dharry.hatenablog.com/entry/20090912/1252690650 http://www.howtoforge.com/vmware_server_centos5.0 http://morishige.jp/blog/archives/43</description>
+    </item>
+    
+    <item>
+      <title>Windwos7で公開鍵秘密鍵を発行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p419/</link>
+      <pubDate>Sun, 09 Dec 2012 11:08:13 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p419/</guid>
+      <description>PuTTYでssh2プロトコルを使ってssh接続Putytyだとフォーマットの変換などが入り面倒なのでTera Termを使う。</description>
+    </item>
+    
+    <item>
+      <title>Windows XPの再インストールメモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p174/</link>
+      <pubDate>Sun, 18 Nov 2012 12:47:03 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p174/</guid>
+      <description>デスクトップにWindows XP環境を構築するときのメモ データのバックアップ Subversionやgit等も使い、忘れずに行う。 LANドライ</description>
+    </item>
+    
+    <item>
+      <title>Windows XP sp3でのEclipse &#43; PHPUnitに関する覚書</title>
+      <link>https://tomonorimatsumura.github.io/blog/p335/</link>
+      <pubDate>Sun, 08 Jul 2012 10:29:23 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p335/</guid>
+      <description>ショートカットキーの設定 -Confort Mouse 4500のドライバをインストール -Confort Mouse 4500のプログラムの設定にEclipseを追加 -Eclipseでショートカ</description>
+    </item>
+    
+  </channel>
+</rss>

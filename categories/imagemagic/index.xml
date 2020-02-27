@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ImageMagic on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/imagemagic/</link>
+    <description>Recent content in ImageMagic on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 27 Apr 2015 09:37:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/imagemagic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ImageMagicで画像ファイルをPDF化する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p977/</link>
+      <pubDate>Mon, 27 Apr 2015 09:37:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p977/</guid>
+      <description>画像ファイルをPDF化する機会があったのでImageMagicを使い、レンタルサーバで処理させてみた。 ImageMagciをインストールする</description>
+    </item>
+    
+  </channel>
+</rss>

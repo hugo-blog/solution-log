@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redmine on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/redmine/</link>
+    <description>Recent content in Redmine on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 14 Sep 2017 12:30:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/redmine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS7でRedmineをバックアップ、リストアする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p1312/</link>
+      <pubDate>Thu, 14 Sep 2017 12:30:57 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p1312/</guid>
+      <description>Redmineをバックアップをする # 作業用ディレクトリへcdする cd /tmp # Gitリポジトリをアーカイブする tar cfv git.tar /var/git/ # Redmineメディアファイ</description>
+    </item>
+    
+    <item>
+      <title>RedmineとGitの連携についてのメモ</title>
+      <link>https://tomonorimatsumura.github.io/blog/p985/</link>
+      <pubDate>Thu, 28 May 2015 13:06:32 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p985/</guid>
+      <description>コミットメッセージにチケット番号を付与する時は半角スペースで区切る。 コミットメッセージに作業時間を記録することが出来る EclipseでGit</description>
+    </item>
+    
+    <item>
+      <title>Redmine2.4をCentOS6.4にインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p914/</link>
+      <pubDate>Wed, 01 Jan 2014 17:42:18 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p914/</guid>
+      <description>Redmine、CentOSのバージョンが上がったのでインストール手順を再確認する。 SELinuxを無効にする vi /etc/sysconfig/selinux SELINUX=disabled reboot iptablesでHT</description>
+    </item>
+    
+    <item>
+      <title>さくらのスタンダードにRedmineをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p797/</link>
+      <pubDate>Sun, 31 Mar 2013 11:49:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p797/</guid>
+      <description>実験的にやってみる。 libyamlをインストールする 後々色々とエラーが出るので必ずインストールする！ cd ~/local/src wget http://pyyaml.org/download/libyaml/yaml-0.1.4.tar.gz tar zxvf yaml-0.1.4.tar.gz cd yaml-0.1.4 ./configure --prefix=~/local make make install Rubyをイ</description>
+    </item>
+    
+    <item>
+      <title>Redmineにテーマをインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p778/</link>
+      <pubDate>Mon, 18 Mar 2013 12:20:45 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p778/</guid>
+      <description>現在のところ使い勝手が良いfarend fancyをインストールする。 https://github.com/farend/redmine_th</description>
+    </item>
+    
+    <item>
+      <title>Redmineのパフォーマンスチューニング</title>
+      <link>https://tomonorimatsumura.github.io/blog/p667/</link>
+      <pubDate>Sat, 09 Feb 2013 10:59:14 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p667/</guid>
+      <description>Redmineが若干遅いのでチューニングを試みる。 avahi-daemonを停止する CentOSはディフォルトでavahi-daemonが起</description>
+    </item>
+    
+    <item>
+      <title>Redmineでチケットが新規作成出来ない</title>
+      <link>https://tomonorimatsumura.github.io/blog/p605/</link>
+      <pubDate>Sun, 20 Jan 2013 14:51:08 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p605/</guid>
+      <description>Redmineでチケットを新たに作成しようと思ったらInternal Errorに遭遇した。調べてみるとファイルを添付したチケットを作成すると</description>
+    </item>
+    
+    <item>
+      <title>Redmineのバージョンを確認する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p596/</link>
+      <pubDate>Sun, 20 Jan 2013 07:52:40 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p596/</guid>
+      <description>Redmineのバージョンを確認するには「ソースから確認する」方法と「管理画面から確認する」方法と2種類ある。 Redmineのバージョンをソ</description>
+    </item>
+    
+    <item>
+      <title>RedmineのMy AccountでInternal Errorが出る</title>
+      <link>https://tomonorimatsumura.github.io/blog/p568/</link>
+      <pubDate>Tue, 08 Jan 2013 10:34:00 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p568/</guid>
+      <description>Redmineの初期設定で、adminでログインして、My Accountから日本語を設定しようとしたらInternal Errorが出た。 Re</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3でApache上でRedmineを実行する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p459/</link>
+      <pubDate>Mon, 31 Dec 2012 05:24:12 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p459/</guid>
+      <description>こちらのサイトを参考にした。 Passengerのインストール Phusion Passengerをインストールする gem install passenger --no-rdoc --no-ri PassengerのApache</description>
+    </item>
+    
+    <item>
+      <title>Redmineを使ってプロジェクトを管理する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p429/</link>
+      <pubDate>Tue, 11 Dec 2012 05:20:29 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p429/</guid>
+      <description>Redmineのインストールが一応終わって正常動作を始めたのでさっそくプロジェクト管理をやってみる。メモでもつけようかと思ったけど、Redm</description>
+    </item>
+    
+    <item>
+      <title>CentOS6.3にRedmine環境を構築する</title>
+      <link>https://tomonorimatsumura.github.io/blog/p190/</link>
+      <pubDate>Mon, 26 Nov 2012 17:13:25 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p190/</guid>
+      <description>Tracがどうも使いにくいのでRedmineに移行してみる実験をする。 CentOSパッケージの追加インストール まずはEPELが導入されている</description>
+    </item>
+    
+  </channel>
+</rss>

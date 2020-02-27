@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>公開キー on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/tags/%E5%85%AC%E9%96%8B%E3%82%AD%E3%83%BC/</link>
+    <description>Recent content in 公開キー on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 04 Oct 2012 08:51:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/tags/%E5%85%AC%E9%96%8B%E3%82%AD%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>さくらのVPSでSSHの初期設定を行う</title>
+      <link>https://tomonorimatsumura.github.io/blog/p5/</link>
+      <pubDate>Thu, 04 Oct 2012 08:51:41 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p5/</guid>
+      <description>秘密鍵および公開鍵の作成 ローカルのCentOSから ssh-keygen -t rsa これで、/root/.sshに、秘密鍵(id_rsa)と公開鍵(id_rsa.pub</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PEAR on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/pear/</link>
+    <description>Recent content in PEAR on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 09 Dec 2012 09:00:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/pear/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PEARに関する覚書き</title>
+      <link>https://tomonorimatsumura.github.io/blog/p413/</link>
+      <pubDate>Sun, 09 Dec 2012 09:00:28 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p413/</guid>
+      <description># PEARの設定を表示する pear config-show Configuration (channel pear.php.net): ===================================== Auto-discover new Channels auto_discover &amp;amp;lt;not set&amp;amp;gt; Default Channel default_channel pear.php.net HTTP Proxy Server Address http_proxy &amp;amp;lt;not set&amp;amp;gt; PEAR server [DEPRECATED] master_server pear.php.net Default Channel Mirror preferred_mirror pear.php.net Remote Configuration File remote_config &amp;amp;lt;not set&amp;amp;gt; PEAR executables directory bin_dir /usr/bin PEAR documentation directory doc_dir /usr/share/pear/doc PHP extension directory ext_dir /usr/lib64/php/modules PEAR directory php_dir</description>
+    </item>
+    
+  </channel>
+</rss>

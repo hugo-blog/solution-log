@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PECL on ソリューリョンログ</title>
+    <link>https://tomonorimatsumura.github.io/blog/categories/pecl/</link>
+    <description>Recent content in PECL on ソリューリョンログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 25 Nov 2012 14:10:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://tomonorimatsumura.github.io/blog/categories/pecl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS6にPECL::ssh2をインストールする</title>
+      <link>https://tomonorimatsumura.github.io/blog/p183/</link>
+      <pubDate>Sun, 25 Nov 2012 14:10:02 +0000</pubDate>
+      
+      <guid>https://tomonorimatsumura.github.io/blog/p183/</guid>
+      <description>PECL::ssh2をインストールする インストールにはPEARおよびlibssh2、libssh2-develが必要。適宜インストールしてお</description>
+    </item>
+    
+  </channel>
+</rss>
