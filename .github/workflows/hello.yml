@@ -1,0 +1,10 @@
+name: CI test
+on: push
+
+jobs:
+  test-hello:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      -name: Checkout
+       uses: actions/checkout@2.0.0
