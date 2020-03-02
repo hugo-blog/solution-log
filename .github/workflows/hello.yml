@@ -2,9 +2,14 @@ name: CI test
 on: push
 
 jobs:
-  test-hello:
+  Hugo deploy:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@v1
+        submodules: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+      - name: Build
+        run: hugo --minify
