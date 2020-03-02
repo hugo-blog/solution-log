@@ -1,7 +1,7 @@
 baseurl = "https://tomonorimatsumura.github.io/blog/"
 languageCode = "ja"
 hasCJKLanguage = "true"
-title = "ソリューリョンログ"
+title = "ソリューリョンログ2"
 # Define how many pages appear per site
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
