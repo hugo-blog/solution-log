@@ -20,6 +20,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: TomonoriMatsumura/blog
           publish_dir: ./public
           publish_branch: master
 
